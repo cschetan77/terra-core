@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import IconDown from 'terra-icon/lib/icon/IconCaretDown';
 import IconUp from 'terra-icon/lib/icon/IconCaretUp';
-import classNames from 'classnames/bind';
+import classNames from 'classnames';
+import classNamesBind from 'classnames/bind';
+import ThemeContext from 'terra-theme-context';
 import styles from './Table.module.scss';
 
-const cx = classNames.bind(styles);
+const cx = classNamesBind.bind(styles);
 
 const TableHeaderCellMinWidth = {
   TINY: 'tiny',
@@ -48,10 +50,14 @@ const TableHeaderCell = ({
   sort,
   ...customProps
 }) => {
-  const contentClassName = cx([
-    { [`min-width-${minWidth}`]: minWidth },
+  const theme = React.useContext(ThemeContext);
+  const contentClassName = classNames(
+    cx([
+      { [`min-width-${minWidth}`]: minWidth },
+      theme.className,
+    ]),
     customProps.className,
-  ]);
+  );
 
   const dataSort = {
     'data-sort': sort,

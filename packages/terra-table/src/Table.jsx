@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames/bind';
+import classNames from 'classnames';
+import classNamesBind from 'classnames/bind';
+import ThemeContext from 'terra-theme-context';
 import TableHeader from './TableHeader';
 import TableHeaderCell from './TableHeaderCell';
 import TableRows from './TableRows';
@@ -12,7 +14,7 @@ import TableMultiSelectableRows from './MultiSelectableRows';
 import TableSubheader from './TableSubheader';
 import styles from './Table.module.scss';
 
-const cx = classNames.bind(styles);
+const cx = classNamesBind.bind(styles);
 
 const propTypes = {
   /**
@@ -40,12 +42,16 @@ const Table = ({
   isPadded,
   ...customProps
 }) => {
-  const tableClassNames = cx([
-    'table',
-    { striped: isStriped },
-    { padded: isPadded },
+  const theme = React.useContext(ThemeContext);
+  const tableClassNames = classNames(
+    cx(
+      'table',
+      { striped: isStriped },
+      { padded: isPadded },
+      theme.className,
+    ),
     customProps.className,
-  ]);
+  );
   return (
     <table {...customProps} className={tableClassNames}>
       {children}

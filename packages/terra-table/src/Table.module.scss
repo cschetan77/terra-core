@@ -1,4 +1,6 @@
 /* stylelint-disable selector-max-compound-selectors, max-nesting-depth */
+@import './orion-fusion-theme/Table.module';
+
 :local {
   .table {
     background-color: var(--terra-table-background-color, rgba(255, 255, 255, 0));

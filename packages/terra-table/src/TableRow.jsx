@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames/bind';
+import classNames from 'classnames';
+import classNamesBind from 'classnames/bind';
+import ThemeContext from 'terra-theme-context';
 import styles from './Table.module.scss';
 
-const cx = classNames.bind(styles);
+const cx = classNamesBind.bind(styles);
 
 const propTypes = {
   /**
@@ -31,12 +33,16 @@ const TableRow = ({
   isSelectable,
   ...customProps
 }) => {
-  const rowClassNames = cx([
-    { 'is-selected': isSelected },
-    { 'is-selectable': isSelectable },
-    'row',
+  const theme = React.useContext(ThemeContext);
+  const rowClassNames = classNames(
+    cx(
+      { 'is-selected': isSelected },
+      { 'is-selectable': isSelectable },
+      'row',
+      theme.className,
+    ),
     customProps.className,
-  ]);
+  );
 
   const childrenArray = React.Children.toArray(children);
   if (childrenArray.length > 16) {
