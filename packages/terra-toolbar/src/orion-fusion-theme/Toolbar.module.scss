@@ -1,7 +1,9 @@
 :local {
   .orion-fusion-theme {
-    --terra-toolbar-background-color: #e8e9ea;
-    --terra-toolbar-border-bottom-color: #64696c;
+    --terra-toolbar-background-color: #e8e9ea; // @grey10
+    --terra-toolbar-border-bottom-color: #dedfe0; // @grey15
+    // --terra-toolbar-border-bottom-color: #d3d4d5; // @grey20
+    // --terra-toolbar-border-bottom-color: #64696c; // @grey70 <-- current
     --terra-toolbar-padding-bottom: 0.25rem;
     --terra-toolbar-padding-left: 0.285714286rem;
     --terra-toolbar-padding-right: 0.285714286rem;
