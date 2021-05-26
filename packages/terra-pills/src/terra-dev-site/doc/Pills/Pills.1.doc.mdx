@@ -1,14 +1,39 @@
 import { Badge } from 'terra-pills/package.json?dev-site-package';
+import { Notice } from '@cerner/terra-docs';
+import StarterImage from '../example/images/starter-example.png';
 
-import DefaultPills from '../example/DefaultPills?dev-site-example';
+import BasicPillExample from '../example/BasicPill?dev-site-example';
+import BasicRemovablePillExample from '../example/BasicRemovablePill?dev-site-example';
+import DisclosurePillExample from '../example/DisclosurePill?dev-site-example';
+import DisclosureRemovablePillExample from '../example/DisclosureRemovablePill?dev-site-example';
+import StandardPillListExample from '../example/StandardPillList?dev-site-example';
+import CollapsiblePillListExample from '../example/CollapsiblePillList?dev-site-example';
+import HandlingPillTruncationExample from '../example/HandlingPillTruncation?dev-site-example';
 
-import PropsTable from 'terra-pills/src/Pill?dev-site-props-table';
+import PillListPropsTable from 'terra-pills/src/PillList?dev-site-props-table';
+import PillsPropsTable from 'terra-pills/src/Pill?dev-site-props-table';
 
 <Badge />
 
 # Terra Pills
 
-The terra-pills component provides a way to either display a static text or optionally allow trigger actions to launch popovers with the desired content.
+Pills are used to assign a label or keyword to user interface (UI) objects, defining a non-hierarchal group. They are used to visually label UI objects for quick recognition. These labels can be generated either by the system or created by users entering data.
+
+## What the component is
+
+Pills are comprised of the following:
+* Pill container with actionable target area
+* Label
+
+There are two types of pills:
+* Basic
+* Removable
+
+## What the component is not
+
+* Although similar, pills and tags have their own use cases and best practices for when they should be used within the UI. See tags for more information.
+* Pills should not be used to create button group functionality. See button groups for more information.
+* Pills should not be used to create toggle functionality. See button group, checkbox, radio buttons, or switch for more information.
 
 ## Getting Started
 
@@ -29,8 +54,74 @@ import Pills from 'terra-pills';
 * [Cross-Browser Support](https://engineering.cerner.com/terra-ui/contributing/terra-ui/component-standards#cross-browser-support)
 * [LTR/RTL Support](https://engineering.cerner.com/terra-ui/contributing/terra-ui/component-standards#ltr--rtl-support)
 
-## Examples
-<DefaultPills />
+<br/>
+<br/>
+<br/>
+<br/>
 
-## Divider Props
-<PropsTable />
+## Introduction
+Add introduction paragraph about pills and pill-Lists, sample image for now:
+
+<img src={StarterImage} alt="temporary sample image" />
+
+## How To Construct
+Introduction to Basic and Removable Pills
+<BasicPillExample title="Basic Pill" />
+<BasicRemovablePillExample title="Removable Pill" />
+
+<br/>
+<br/>
+
+Introduction to Pill with Popover and Removable Pill with Poppver
+<DisclosurePillExample title="Basic Pill with Popover" />
+<DisclosureRemovablePillExample title="Removable Pill with Popover" />
+
+<Notice variant="important" ariaLevel="3">
+  A11Y Instructions:
+
+  Need to add details and specific code instructions and expectations on consumers of how to add the popup and what they need to do.
+</Notice>
+
+<br/>
+<br/>
+
+## Using Pill Lists
+
+Standard Pill List (not collapsing)
+<StandardPillListExample title="Standard Pill List" />
+
+Collapsible Pill List - for use in Applied Filters and similar patterns
+<CollapsiblePillListExample title="Collapsible Pill List" />
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Truncation
+<HandlingPillTruncationExample title="How to handle pills that need to truncate" />
+
+Add paragraph descibing situations that can cause truncation.
+
+<Notice variant="ux-recommendation" ariaLevel="3">
+  (add details about the UX recommendations for truncation and expectations on consumers to provide a popup, etc.)
+
+  Original Text (needs to be edited to provide instruction that consumer's must provide their own popovers):
+
+  "In the instance of a long label, truncation of the pill is allowed.  Disclosure of the truncated text is displayed using a popover. See popovers for more information."
+</Notice>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Props for Pill-List
+<PillListPropsTable />
+
+## Props for Pills
+<PillsPropsTable />

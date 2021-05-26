@@ -1,0 +1,31 @@
+:local {
+
+  .inline-pill-list {
+    display: inline-block;
+  }
+
+  .fixed-width-200 {
+    width: 200px;    
+  }
+
+  .fixed-width-400 {
+    width: 400px;    
+  }
+
+  .fixed-width-600 {
+    width: 600px;    
+  }
+
+  .fixed-width-50per {
+    width: 50%;    
+  }
+
+  .show-pill-list {
+    border: 1px solid #000;
+  }
+
+  .toggle-active-button:disabled {
+    opacity: 0.3;
+  }
+}
+

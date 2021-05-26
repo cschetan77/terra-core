@@ -35,6 +35,10 @@ const propTypes = {
    * Role attribute value to be assigned to the pill
    */
   role: PropTypes.string,
+  /**
+   * Title attribute value to be assigned to the pill, creates a browser-native tooltip
+   */
+  title: PropTypes.string,
 };
 
 const defaultProps = {
@@ -49,6 +53,7 @@ const Pill = (props) => {
     onRemove,
     onSelect,
     refCallback,
+    title,
   } = props;
 
   const pillRef = useRef();
@@ -131,6 +136,7 @@ const Pill = (props) => {
       className={pillClassNames}
       data-terra-pills-show-focus-styles="true"
       ref={pillRef}
+      title={title}
     >
       <div
         {...pillButtonProps}

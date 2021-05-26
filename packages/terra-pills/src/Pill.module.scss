@@ -60,6 +60,8 @@
     white-space: nowrap;
 
     &.is-selectable {
+      cursor: pointer;
+
       &:hover {
         background-color: var(--terra-pills-pill-label-selectable-background-color-hover, #dedfe0);
       }
@@ -95,11 +97,12 @@
     border-left: 1px solid #000;
     border-top-right-radius: var(--terra-pills-pill-remove-button-border-top-right-radius, 0.78571rem);
     color: var(--terra-pills-pill-remove-button-color, #4d5153);
+    cursor: pointer;
     line-height: 0.57142;
     padding-bottom: var(--terra-pills-pill-remove-button-padding-bottom, 0.5rem);
     padding-left: var(--terra-pills-pill-remove-button-padding-left, 0.35714rem);
-    padding-right: var(--terra-pills-pill-remove-button-padding-right, 0.71428rem);
-    padding-top: var(--terra-pills-pill-remove-button-padding-top, 0.28571rem);
+    padding-right: var(--terra-pills-pill-remove-button-padding-right, 0.5rem); //0.71428rem);
+    padding-top: var(--terra-pills-pill-remove-button-padding-top, 0.33rem); //0.28571rem);
 
     &:hover {
       background-color: var(--terra-pills-pill-remove-button-background-color-hover, #dedfe0);
@@ -118,11 +121,11 @@
   }
 
   // Temporary
-  .pill-list {
-    border: 1px solid #000;
-    visibility: hidden;
-    width: 200px;
-  }
+  // .pill-list {
+  //   border: 1px solid #000;
+  //   visibility: hidden;
+  //   width: 200px;
+  // }
 
   .roll-up-pill {
     background-color: var(--terra-pills-roll-up-pill-background-color, #fff);
@@ -131,6 +134,7 @@
     border-color: var(--terra-pills-roll-up-pill-border-color, #868a8c);
     border-radius: var(--terra-pills-roll-up-pill-border-radius, 0.85714rem);
     color: var(--terra-pills-roll-up-pill-color, #4d5153);
+    cursor: pointer;
     display: inline-block;
     font-size: var(--terra-pills-roll-up-pill-font-size, 0.85714rem);
     line-height: 1.16667;
