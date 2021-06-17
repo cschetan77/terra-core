@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Pill from '../../../../Pill';
+import Pill from 'terra-pills/lib/Pill';
 
 const SelectableAndRemovablePill = () => {
   const [isRemoved, setIsRemoved] = useState(true);

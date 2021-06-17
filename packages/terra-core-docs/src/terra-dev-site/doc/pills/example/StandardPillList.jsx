@@ -4,7 +4,7 @@ import PillList, { Pill } from 'terra-pills';
 const StandardPillList = () => (
   <div>
     <span>Your Focus Areas:</span>
-    <PillList ariaLabel="Your Focus Areas" >
+    <PillList ariaLabel="Your Focus Areas">
       <Pill label="Preventative Health" />
       <Pill label="Physical Activity" />
       <Pill label="Nutrition" />

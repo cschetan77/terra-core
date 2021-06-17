@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Button from 'terra-button';
-import PillList from '../../../../PillList';
-import Pill from '../../../../Pill';
+import PillList from 'terra-pills/lib/PillList';
+import Pill from 'terra-pills/lib/Pill';
 
-const CollapsiblePillList = () => {
+const CollapsiblePillListWithDifferentPillType = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handleRollUpPillOnClick = () => {
@@ -14,6 +14,14 @@ const CollapsiblePillList = () => {
     setIsCollapsed(!isCollapsed);
   };
 
+  const handleOnRemove = () => {
+    // Callback just to enable remove button
+  };
+
+  const handleOnSelect = () => {
+    // Callback just to make pill selectable
+  };
+
   return (
     <>
       <PillList
@@ -22,19 +30,23 @@ const CollapsiblePillList = () => {
         rollUpPillOnTrigger={handleRollUpPillOnClick}
       >
         <Pill
-          label="Demo 1"
+          label="Basic 1"
         />
         <Pill
-          label="Demo 2"
+          label="Removable"
+          onRemove={handleOnRemove}
         />
         <Pill
-          label="Demo 3"
+          label="Popup"
+          onSelect={handleOnSelect}
         />
         <Pill
-          label="Demo 4"
+          label="Removable and Popup"
+          onSelect={handleOnSelect}
+          onRemove={handleOnRemove}
         />
         <Pill
-          label="Demo 5"
+          label="Basic 2"
         />
       </PillList>
       <Button text="Toggle Roll Up" onClick={handleButtonOnClick} />
@@ -42,4 +54,4 @@ const CollapsiblePillList = () => {
   );
 };
 
-export default CollapsiblePillList;
+export default CollapsiblePillListWithDifferentPillType;

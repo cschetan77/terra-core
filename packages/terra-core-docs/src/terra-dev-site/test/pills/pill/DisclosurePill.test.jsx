@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
+import Avatar from 'terra-avatar';
 import Popup from 'terra-popup';
-import Pill from '../../../../Pill';
+import Pill from 'terra-pills/lib/Pill';
+import exampleAvatarImage from '../../../common/images/space_150x150.jpg';
 
 const DisclosurePill = () => {
   const [open, setOpen] = useState(false);
@@ -36,6 +38,7 @@ const DisclosurePill = () => {
         contentWidth="160"
       >
         <p>Demo Popup</p>
+        <Avatar image={exampleAvatarImage} initials="JS" alt="Deep Space" />
       </Popup>
     </>
   );

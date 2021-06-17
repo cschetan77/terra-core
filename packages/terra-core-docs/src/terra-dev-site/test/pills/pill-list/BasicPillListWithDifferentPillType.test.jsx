@@ -1,6 +1,6 @@
 import React from 'react';
-import PillList from '../../../../PillList';
-import Pill from '../../../../Pill';
+import PillList from 'terra-pills/lib/PillList';
+import Pill from 'terra-pills/lib/Pill';
 
 const BasicPillListWithDifferentPillType = () => {
   const handleOnRemove = () => {
@@ -27,7 +27,7 @@ const BasicPillListWithDifferentPillType = () => {
         onSelect={handleOnSelect}
       />
       <Pill
-        label="Removable and Popup"
+        label="Removable and Popup should show ellipses"
         onSelect={handleOnSelect}
         onRemove={handleOnRemove}
       />

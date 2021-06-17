@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Button from 'terra-button';
-import PillList from '../../../../PillList';
-import Pill from '../../../../Pill';
+import PillList from 'terra-pills/lib/PillList';
+import Pill from 'terra-pills/lib/Pill';
 
-const CollapsiblePillListFirstEllipsesPill = () => {
+const CollapsiblePillListSinglePill = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handleRollUpPillOnClick = () => {
@@ -22,10 +22,7 @@ const CollapsiblePillListFirstEllipsesPill = () => {
         rollUpPillOnTrigger={handleRollUpPillOnClick}
       >
         <Pill
-          label="Very Long Label which should show ellipses"
-        />
-        <Pill
-          label="Random"
+          label="Demo"
         />
       </PillList>
       <Button text="Toggle Roll Up" onClick={handleButtonOnClick} />
@@ -33,4 +30,4 @@ const CollapsiblePillListFirstEllipsesPill = () => {
   );
 };
 
-export default CollapsiblePillListFirstEllipsesPill;
+export default CollapsiblePillListSinglePill;
