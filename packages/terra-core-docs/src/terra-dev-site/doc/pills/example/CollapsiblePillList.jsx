@@ -14,13 +14,14 @@ const CollapsiblePillList = () => {
   };
 
   const handleOnRemove = () => {
+    // eslint-disable-next-line no-alert
     window.alert('You clicked to remove this pill.');
   };
 
   const handleRemoveAll = () => {
-    window.alert('You clicked "clear all" to remove all pills.')
+    // eslint-disable-next-line no-alert
+    window.alert('You clicked "clear all" to remove all pills.');
   };
-
 
   const handleButtonOnClick = () => {
     setIsCollapsed(!isCollapsed);
@@ -70,10 +71,10 @@ const CollapsiblePillList = () => {
         </PillList>
       </div>
       <Button onClick={handleRemoveAll}>Clear All Filters</Button>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
       <Button onClick={handleButtonOnClick} disabled={isCollapsed} className={cx('toggle-active-button')}>Manually toggle roll-up and collapsing Pill-List (for example only)</Button>
     </>
   );

@@ -3,8 +3,7 @@ import Avatar from 'terra-avatar';
 import Popup from 'terra-popup';
 import PillList, { Pill } from 'terra-pills';
 import Spacer from 'terra-spacer';
-// import fakeavatar from './images/avatar-contact.png';
-import exampleAvatarImage from '../../../common/images/space_150x150.jpg';
+import UserPhoto from '../../../common/images/cerner-owned/patient-photo-1__150x150.jpg';
 
 const DisclosurePill = () => {
   const [open, setOpen] = useState(false);
@@ -38,11 +37,20 @@ const DisclosurePill = () => {
         isArrowDisplayed
         targetRef={getPillNode}
         onRequestClose={handleOnRequestClose}
-        contentHeight="480"
+        contentHeight="240"
         contentWidth="320"
       >
         <Spacer padding="large medium">
-          <Avatar image={exampleAvatarImage} size="1.5em" initials="JS" alt="Deep Space" />
+          <Avatar image={UserPhoto} size="1.5em" initials="PW" alt="Pat Wheatley" />
+        </Spacer>
+      </Popup>
+    </PillList>
+  );
+};
+
+export default DisclosurePill;
+
+/*
           <p>Pat Wheatley</p>
           <p>Role Position Second Line here</p>
           <p>Department Location</p>
@@ -52,13 +60,4 @@ const DisclosurePill = () => {
 
           <p>Email</p>
           <p>username.lastname@email.com</p>
-        </Spacer>
-      </Popup>
-    </PillList>
-  );
-};
-
-export default DisclosurePill;
-
-//         <p>Pat Wheatley contact details</p>
-//        <img src={fakeavatar} alt="temporary avatar" width="320" height="240" />
+*/
