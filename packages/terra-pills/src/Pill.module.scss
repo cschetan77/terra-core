@@ -9,8 +9,12 @@
     border-style: solid;
     border-color: var(--terra-pills-pill-container-border-color, #868a8c);
     border-radius: var(--terra-pills-pill-container-border-radius, 0.85714rem);
+    box-sizing: border-box;
     display: inline-flex;
     margin: var(--terra-pills-pill-container-margin, 0.35714rem);
+    max-width: calc(100% - 2 * var(--terra-pills-pill-container-max-width-inset, 0.35714rem)); // Needed for IE10 truncation
+    min-width: 0; 
+    overflow: hidden;
     outline: none;
 
     &.is-focusable {
@@ -46,11 +50,12 @@
 
   .pill-label {
     border-radius: var(--terra-pills-pill-label-border-radius, 0.78571rem);
+    box-sizing: border-box;
     color: var(--terra-pills-pill-label-color, #4d5153);
-    display: inline-block;
+    display: block;
+    flex: 1 1 auto;
     font-size: var(--terra-pills-pill-label-font-size, 0.85714rem);
     line-height: 1.16667;
-    max-width: 100%;
     overflow: hidden;
     padding-bottom: var(--terra-pills-pill-label-padding-bottom, 0.28571rem);
     padding-left: var(--terra-pills-pill-label-padding-left, 0.71428rem);
@@ -94,8 +99,11 @@
     border-bottom-right-radius: var(--terra-pills-pill-remove-button-border-bottom-right-radius, 0.78571rem);
     border-left: 1px solid #000;
     border-top-right-radius: var(--terra-pills-pill-remove-button-border-top-right-radius, 0.78571rem);
+    box-sizing: border-box;
     color: var(--terra-pills-pill-remove-button-color, #4d5153);
+    display: block;
     line-height: 0.57142;
+    min-width: 0;
     padding-bottom: var(--terra-pills-pill-remove-button-padding-bottom, 0.5rem);
     padding-left: var(--terra-pills-pill-remove-button-padding-left, 0.35714rem);
     padding-right: var(--terra-pills-pill-remove-button-padding-right, 0.71428rem);
