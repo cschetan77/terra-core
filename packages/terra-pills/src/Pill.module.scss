@@ -56,6 +56,7 @@
     flex: 1 1 auto;
     font-size: var(--terra-pills-pill-label-font-size, 0.85714rem);
     line-height: 1.16667;
+    min-width: 0;
     overflow: hidden;
     padding-bottom: var(--terra-pills-pill-label-padding-bottom, 0.28571rem);
     padding-left: var(--terra-pills-pill-label-padding-left, 0.71428rem);
@@ -102,6 +103,7 @@
     box-sizing: border-box;
     color: var(--terra-pills-pill-remove-button-color, #4d5153);
     display: block;
+    flex: 0 0 auto;
     line-height: 0.57142;
     min-width: 0;
     padding-bottom: var(--terra-pills-pill-remove-button-padding-bottom, 0.5rem);
