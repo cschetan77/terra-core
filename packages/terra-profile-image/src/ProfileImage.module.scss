@@ -3,22 +3,25 @@
 @import './orion-fusion-theme/ProfileImage.module';
 
 :local { 
+  .profile-image,
   .placeholder-image {
-    background-image: var(--terra-profile-image-placeholder-background-image, none); // Needed for themes
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .placeholder-span {
+    background-image: var(--terra-profile-image-placeholder-background-image, url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAMAAAAL34HQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRF3t/gm5+h2tvcn6Olzc/Qvb/BrK+xtLe51tfYo6epqKut0dPUxcfIycvMwcPEsLO1uLu96SVk9gAAArlJREFUeNrsmwmu3SAMAGPWQAjh/qf9T19V1XRJ2Gws1XOCkTEYHGfbBEEQBEEQBEEQhHeO7F2Ab9xlT8VASaVLw2/EvK+V2v0fTj+illZKwb8Ji8RUgWeiWWBlArxSyK0s1BBpc19dUIemXEgVoZrE0orOq80K4KTRutqsQB989uDtZCWokgbaufATK3Ro4adX6bECjbyMO/SBXIZ8pxbsHIMF4FkGCwAxu5Tu18p4WqnfCiKfsnMDrQSpESu8VTyHtByfIn0DS8uNaWEllx7TwqrXY1ZgkTogg1pI5doMajnREq3/Swvp/bPzPLeYHqdbHNPC6ildY1pYj588ZBXQPgsMaeE9yYZuNnjtNz+ihfdQNPwO029CvxZmLynz24djr33cfrPlGKzeHiV+c/7kdNUaLIwa/4tUT9bnDR/DqBqONN8i0af+wtKqrWRHwrEIy9Lqk1+V+/EiHiE5qo57u1Gj3hM/HtsCzHPTUtttEQ9i2q4cTDJ/n/2Jafm01Onv2a+v1XNSP9PfZGudc95ac2yCIAiCIPDjMN8wKdTK2OLul0HtnM1mnZKx18P7J/pEf+3ac03nJviT1Kn+64+mMjub504L+mqq3NWldKhbQNnuTnNMDKUQfzZIgyM2n6Wcf9iaCBMoc1+1qsAcwszjwgSYhp8WMAszCXMyTDmYzIw2/aFhOuMLmQCD0UZvBhzG/s/wAAy98Kw+XomjVf+nT2SrzvlYi23VlV8JgKGXAQpaz69dk2g1fltXEYhomiguQEbDBeyks2oYRlCaUKs+vS4gJfNbwvplVIFYq24ZLZBTsRt3equan2P9Aq33CYAVwar4CXVJsF7DtSZYr+FaFKyXcNGWnVu4VjwLBx8cYZ3Ww0+oByxk55fwz/dUvVIrcLnRVL5my1qtwm8fPqziDov5ZS9+CTAAD2spuMse72cAAAAASUVORK5CYII='));
     background-origin: content-box;
     background-position: center;
     background-repeat: no-repeat;
-    box-sizing: border-box;
-
-    &.cover,
-    &.fill {
-      background-size: cover; // Needed for themes
-    }
-
-    &.contain,
-    &.scale-down,
-    &.none {
-      background-size: contain; // Needed for themes
-    }
+    background-size: cover;
+    display: inline-block;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 0;
   }
 }
