@@ -17,19 +17,25 @@ exports[`correctly applies the theme context className 1`] = `
   >
     <Image
       alt="A profile image"
+      className="profile-image orion-fusion-theme"
       fit="cover"
       height="75"
       isFluid={false}
       placeholder={
-        <span
-          className="placeholder-images orion-fusion-theme"
-          style={
-            Object {
-              "height": "75px",
-              "width": "75px",
-            }
+        <Image
+          alt="A profile image"
+          className={
+            Array [
+              "placeholder-image cover",
+              "profile-image orion-fusion-theme",
+            ]
           }
-          title="A profile image"
+          fit="cover"
+          height="75"
+          isFluid={false}
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NSA3NSIgd2lkdGg9Ijc1IiBoZWlnaHQ9Ijc1IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSJyZ2JhKDEyNywxMjcsMTI3LDAuMDAwMSkiIGQ9Ik0wIDBoNzV2NzVIMHoiLz48L3N2Zz4="
+          variant="default"
+          width="75"
         />
       }
       src="profile.jpg"
@@ -38,23 +44,38 @@ exports[`correctly applies the theme context className 1`] = `
     >
       <img
         alt="A profile image"
-        className="image cover default orion-fusion-theme hidden"
+        className="image cover default orion-fusion-theme hidden profile-image orion-fusion-theme"
         height="75"
         onError={[Function]}
         onLoad={[Function]}
         src="profile.jpg"
         width="75"
       />
-      <span
-        className="placeholder-images orion-fusion-theme"
-        style={
-          Object {
-            "height": "75px",
-            "width": "75px",
-          }
+      <Image
+        alt="A profile image"
+        className={
+          Array [
+            "placeholder-image cover",
+            "profile-image orion-fusion-theme",
+          ]
         }
-        title="A profile image"
-      />
+        fit="cover"
+        height="75"
+        isFluid={false}
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NSA3NSIgd2lkdGg9Ijc1IiBoZWlnaHQ9Ijc1IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSJyZ2JhKDEyNywxMjcsMTI3LDAuMDAwMSkiIGQ9Ik0wIDBoNzV2NzVIMHoiLz48L3N2Zz4="
+        variant="default"
+        width="75"
+      >
+        <img
+          alt="A profile image"
+          className="image cover default orion-fusion-theme placeholder-image cover profile-image orion-fusion-theme"
+          height="75"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NSA3NSIgd2lkdGg9Ijc1IiBoZWlnaHQ9Ijc1IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSJyZ2JhKDEyNywxMjcsMTI3LDAuMDAwMSkiIGQ9Ik0wIDBoNzV2NzVIMHoiLz48L3N2Zz4="
+          width="75"
+        />
+      </Image>
     </Image>
   </ProfileImage>
 </ThemeContextProvider>
@@ -63,19 +84,25 @@ exports[`correctly applies the theme context className 1`] = `
 exports[`should render a Terra image with a placeholder prop 1`] = `
 <Image
   alt="A profile image"
+  className="profile-image"
   fit="cover"
   height="75"
   isFluid={false}
   placeholder={
-    <span
-      className="placeholder-images"
-      style={
-        Object {
-          "height": "75px",
-          "width": "75px",
-        }
+    <Image
+      alt="A profile image"
+      className={
+        Array [
+          "placeholder-image cover",
+          "profile-image",
+        ]
       }
-      title="A profile image"
+      fit="cover"
+      height="75"
+      isFluid={false}
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NSA3NSIgd2lkdGg9Ijc1IiBoZWlnaHQ9Ijc1IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSIjZGVkZmUwIiBkPSJNMCAwaDc1djc1SDB6Ii8+PGVsbGlwc2UgZmlsbD0iIzliOWZhMSIgY3g9IjM3LjM2IiBjeT0iMjcuNDEiIHJ4PSIxNS45NSIgcnk9IjE2LjM2Ii8+PHBhdGggZmlsbD0iIzliOWZhMSIgIGQ9Ik0zNy41IDUwLjQ1QzIyLjEgNTAuNDUgOS4xMzYgNjAuNjggNS40NSA3NSBoNjQuMSBjLTMuNjgtMTMuOS0xNi42NC0yNC41NSAtMzIuMSAtMjQuNTUgeiIvPjwvc3ZnPg=="
+      variant="default"
+      width="75"
     />
   }
   src="profile.jpg"
@@ -87,19 +114,25 @@ exports[`should render a Terra image with a placeholder prop 1`] = `
 exports[`should render a profile image with fit style as contain 1`] = `
 <Image
   alt="A profile image"
+  className="profile-image"
   fit="contain"
   height="75"
   isFluid={false}
   placeholder={
-    <span
-      className="placeholder-images"
-      style={
-        Object {
-          "height": "75px",
-          "width": "75px",
-        }
+    <Image
+      alt="A profile image"
+      className={
+        Array [
+          "placeholder-image contain",
+          "profile-image",
+        ]
       }
-      title="A profile image"
+      fit="contain"
+      height="75"
+      isFluid={false}
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NSA3NSIgd2lkdGg9Ijc1IiBoZWlnaHQ9Ijc1IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSIjZGVkZmUwIiBkPSJNMCAwaDc1djc1SDB6Ii8+PGVsbGlwc2UgZmlsbD0iIzliOWZhMSIgY3g9IjM3LjM2IiBjeT0iMjcuNDEiIHJ4PSIxNS45NSIgcnk9IjE2LjM2Ii8+PHBhdGggZmlsbD0iIzliOWZhMSIgIGQ9Ik0zNy41IDUwLjQ1QzIyLjEgNTAuNDUgOS4xMzYgNjAuNjggNS40NSA3NSBoNjQuMSBjLTMuNjgtMTMuOS0xNi42NC0yNC41NSAtMzIuMSAtMjQuNTUgeiIvPjwvc3ZnPg=="
+      variant="default"
+      width="75"
     />
   }
   src="profile.jpg"
@@ -109,14 +142,19 @@ exports[`should render a profile image with fit style as contain 1`] = `
 `;
 
 exports[`should render an avatar image without Source prop 1`] = `
-<span
-  className="placeholder-images"
-  style={
-    Object {
-      "height": "75px",
-      "width": "75px",
-    }
+<Image
+  alt="Default"
+  className={
+    Array [
+      "placeholder-image cover",
+      "profile-image",
+    ]
   }
-  title="Default"
+  fit="cover"
+  height="75"
+  isFluid={false}
+  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NSA3NSIgd2lkdGg9Ijc1IiBoZWlnaHQ9Ijc1IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSIjZGVkZmUwIiBkPSJNMCAwaDc1djc1SDB6Ii8+PGVsbGlwc2UgZmlsbD0iIzliOWZhMSIgY3g9IjM3LjM2IiBjeT0iMjcuNDEiIHJ4PSIxNS45NSIgcnk9IjE2LjM2Ii8+PHBhdGggZmlsbD0iIzliOWZhMSIgIGQ9Ik0zNy41IDUwLjQ1QzIyLjEgNTAuNDUgOS4xMzYgNjAuNjggNS40NSA3NSBoNjQuMSBjLTMuNjgtMTMuOS0xNi42NC0yNC41NSAtMzIuMSAtMjQuNTUgeiIvPjwvc3ZnPg=="
+  variant="default"
+  width="75"
 />
 `;
