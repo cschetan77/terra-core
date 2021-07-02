@@ -28,7 +28,7 @@ const CollapsiblePillListSinglePill = () => {
           label="Demo"
         />
       </PillList>
-      <Button text="Toggle Roll Up" onClick={handleButtonOnClick} />
+      <Button onClick={handleButtonOnClick}>Toggle Roll Up</Button>
     </div>
   );
 };
