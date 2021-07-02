@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import Button from 'terra-button';
-import PillList from '../../../../PillList';
-import Pill from '../../../../Pill';
+import classNames from 'classnames/bind';
+import { Button } from '@cerner/terra-docs';
+import PillList, { Pill } from 'terra-pills';
+import styles from './PillListTestCommon.module.scss';
+
+const cx = classNames.bind(styles);
 
 const CollapsiblePillListWithDifferentPillType = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -23,7 +26,7 @@ const CollapsiblePillListWithDifferentPillType = () => {
   };
 
   return (
-    <>
+    <div className={cx(['show-border', 'width-200'])}>
       <PillList
         ariaLabel="Pill Container"
         isCollapsed={isCollapsed}
@@ -50,7 +53,7 @@ const CollapsiblePillListWithDifferentPillType = () => {
         />
       </PillList>
       <Button text="Toggle Roll Up" onClick={handleButtonOnClick} />
-    </>
+    </div>
   );
 };
 

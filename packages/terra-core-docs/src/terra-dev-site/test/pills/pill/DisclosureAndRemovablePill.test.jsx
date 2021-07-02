@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Popup from 'terra-popup';
-import Pill from '../../../../Pill';
+import { Pill } from 'terra-pills';
 
 const DisclosureAndRemovablePill = () => {
   const [open, setOpen] = useState(false);

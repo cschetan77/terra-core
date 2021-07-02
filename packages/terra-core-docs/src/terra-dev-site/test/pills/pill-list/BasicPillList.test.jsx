@@ -1,6 +1,5 @@
 import React from 'react';
-import PillList from '../../../../PillList';
-import Pill from '../../../../Pill';
+import PillList, { Pill } from 'terra-pills';
 
 const BasicPillList = () => (
   <PillList
