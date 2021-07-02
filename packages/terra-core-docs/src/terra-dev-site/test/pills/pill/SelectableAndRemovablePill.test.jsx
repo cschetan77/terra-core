@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
-import Pill from '../../../../Pill';
+import { Pill } from 'terra-pills';
 
-const BasicRemovablePill = () => {
+const SelectableAndRemovablePill = () => {
   const [isRemoved, setIsRemoved] = useState(true);
 
   const handleOnRemove = () => {
     setIsRemoved(false);
   };
 
+  const handleOnSelect = () => {
+    // Callback just to make pill selectable
+  };
+
   return (
     <div>
       {isRemoved && (
         <Pill
-          label="Demo"
+          label="Label"
+          onSelect={handleOnSelect}
           onRemove={handleOnRemove}
         />
       )}
@@ -20,4 +25,4 @@ const BasicRemovablePill = () => {
   );
 };
 
-export default BasicRemovablePill;
+export default SelectableAndRemovablePill;

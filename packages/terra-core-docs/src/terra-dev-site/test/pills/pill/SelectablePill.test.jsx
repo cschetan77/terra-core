@@ -1,5 +1,5 @@
 import React from 'react';
-import Pill from '../../../../Pill';
+import { Pill } from 'terra-pills';
 
 const SelectablePill = () => {
   const handleOnSelect = () => {
@@ -8,7 +8,7 @@ const SelectablePill = () => {
 
   return (
     <Pill
-      label="Demo"
+      label="Label"
       onSelect={handleOnSelect}
     />
   );

@@ -1,9 +1,9 @@
 import React from 'react';
-import Pill from '../../../../Pill';
+import { Pill } from 'terra-pills';
 
 const BasicPill = () => (
   <Pill
-    label="Demo"
+    label="Label"
   />
 );
 

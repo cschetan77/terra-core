@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Popup from 'terra-popup';
-import Pill from '../../../../Pill';
+import { Pill } from 'terra-pills';
 
 const DisclosurePill = () => {
   const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ const DisclosurePill = () => {
   return (
     <>
       <Pill
-        label="Demo"
+        label="Label"
         onSelect={handleOnSelect}
         refCallback={setPillNode}
       />
