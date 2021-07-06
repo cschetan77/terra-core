@@ -102,13 +102,14 @@
     }
   }
 
-  .remove-button {
+  .pill-remove-button {
+    align-items: center;
     background-color: var(--terra-pills-pill-remove-button-background-color, #fff);
     box-shadow: var(--terra-pills-pill-remove-button-box-shadow, -4px 0 0 -3px #d3d4d5);
     box-sizing: border-box;
     color: var(--terra-pills-pill-remove-button-color, #4d5153);
     cursor: pointer;
-    display: block;
+    display: flex;
     flex: 0 0 auto;
     line-height: 0;
     min-width: 0;
@@ -136,7 +137,10 @@
     display: inline-block;
     height: var(--terra-pills-clear-icon-height, 0.75rem);
     line-height: 0;
-    margin: var(--terra-pills-clear-icon-margin, 0.4035714286rem 0.6428571429rem 0 0.3928571429rem);
+    margin-bottom: 0;
+    margin-left: var(--terra-pills-clear-icon-margin, 0.3928571429rem);
+    margin-right: var(--terra-pills-clear-icon-margin, 0.6428571429rem);
+    margin-top: 0;
     width: var(--terra-pills-clear-icon-width, 0.75rem);
   }
 

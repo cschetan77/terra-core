@@ -9,7 +9,6 @@ import {
 } from 'keycode-js';
 import ThemeContext from 'terra-theme-context';
 import VisuallyHiddenText from 'terra-visually-hidden-text';
-import IconClear from 'terra-icon/lib/icon/IconClear';
 import styles from './Pill.module.scss';
 
 const cx = classNamesBind.bind(styles);
@@ -122,7 +121,7 @@ const Pill = (props) => {
     { 'is-selectable-and-removable': !!onSelect && !!onRemove },
   ]);
   const removeButtonClassNames = cx([
-    'remove-button',
+    'pill-remove-button',
   ]);
 
   return (
@@ -143,7 +142,7 @@ const Pill = (props) => {
           {...removeButtonProps}
           className={removeButtonClassNames}
         >
-          <IconClear className={cx('clear-icon')} />
+          <span className={cx('clear-icon')} />
         </div>
       )}
       {pillInteractionHint && <VisuallyHiddenText text={pillInteractionHint} />}
