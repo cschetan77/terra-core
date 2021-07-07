@@ -18,18 +18,19 @@ const CollapsiblePillListSinglePill = () => {
   };
 
   return (
-    <div className={cx(['container', 'show-border', 'width-200'])}>
+    <>
       <PillList
         ariaLabel="Pill Container"
         isCollapsed={isCollapsed}
         rollUpPillOnTrigger={handleRollUpPillOnClick}
+        className={cx(['container', 'show-border', 'width-200'])}
       >
         <Pill
           label="Demo"
         />
       </PillList>
       <Button onClick={handleButtonOnClick}>Toggle Roll Up</Button>
-    </div>
+    </>
   );
 };
 

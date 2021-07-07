@@ -34,29 +34,31 @@ const DisclosureAndRemovablePill = () => {
       ariaLabel="Example of a Basic Pill with a Popup"
     >
       {isRemoved && (
-        <Pill
-          label="Daniel Williams"
-          id={disclosurePillId}
-          onSelect={handleOnSelect}
-          onRemove={handleOnRemove}
-          refCallback={setPillNode}
-          ariaHasPopup
-          ariaExpanded={open}
-          ariaControls={disclosurePopupId}
-        />
+        <>
+          <Pill
+            label="Daniel Williams"
+            id={disclosurePillId}
+            onSelect={handleOnSelect}
+            onRemove={handleOnRemove}
+            refCallback={setPillNode}
+            ariaHasPopup
+            ariaExpanded={open}
+            ariaControls={disclosurePopupId}
+          />
+          <Popup
+            isOpen={open}
+            isArrowDisplayed
+            targetRef={getPillNode}
+            onRequestClose={handleOnRequestClose}
+            contentHeight="40"
+            contentWidth="240"
+          >
+            <Spacer padding="medium" id={disclosurePopupId} aria-labelledby={disclosurePillId}>
+              - Sample Popup Content -
+            </Spacer>
+          </Popup>
+        </>
       )}
-      <Popup
-        isOpen={open}
-        isArrowDisplayed
-        targetRef={getPillNode}
-        onRequestClose={handleOnRequestClose}
-        contentHeight="40"
-        contentWidth="240"
-      >
-        <Spacer padding="medium" id={disclosurePopupId} aria-labelledby={disclosurePillId}>
-          - Sample Popup Content -
-        </Spacer>
-      </Popup>
     </PillList>
   );
 };

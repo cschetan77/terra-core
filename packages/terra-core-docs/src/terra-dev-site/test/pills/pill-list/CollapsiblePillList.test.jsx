@@ -18,11 +18,12 @@ const CollapsiblePillList = () => {
   };
 
   return (
-    <div className={cx(['container', 'show-border', 'width-200'])}>
+    <>
       <PillList
         ariaLabel="Pill Container"
         isCollapsed={isCollapsed}
         rollUpPillOnTrigger={handleRollUpPillOnClick}
+        className={cx(['container', 'show-border', 'width-200'])}
       >
         <Pill
           label="Demo 1"
@@ -40,8 +41,8 @@ const CollapsiblePillList = () => {
           label="Demo 5"
         />
       </PillList>
-      <Button text="Toggle Roll Up" onClick={handleButtonOnClick} />
-    </div>
+      <Button onClick={handleButtonOnClick}>Toggle Roll Up</Button>
+    </>
   );
 };
 

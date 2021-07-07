@@ -26,11 +26,12 @@ const CollapsiblePillListWithDifferentPillType = () => {
   };
 
   return (
-    <div className={cx(['show-border', 'width-200'])}>
+    <>
       <PillList
         ariaLabel="Pill Container"
         isCollapsed={isCollapsed}
         rollUpPillOnTrigger={handleRollUpPillOnClick}
+        className={cx(['show-border', 'width-200'])}
       >
         <Pill
           label="Basic 1"
@@ -53,7 +54,7 @@ const CollapsiblePillListWithDifferentPillType = () => {
         />
       </PillList>
       <Button onClick={handleButtonOnClick}>Toggle Roll Up</Button>
-    </div>
+    </>
   );
 };
 

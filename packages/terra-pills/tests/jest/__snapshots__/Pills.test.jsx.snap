@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctly applies the theme context className 1`] = `
+<ThemeContextProvider
+  theme={
+    Object {
+      "className": "orion-fusion-theme",
+    }
+  }
+>
+  <PillList
+    ariaLabel="pill list label"
+    isCollapsed={false}
+  >
+    <div
+      aria-label="pill list label"
+      aria-live="polite"
+      aria-relevant="removals"
+      className="pill-list orion-fusion-theme"
+    >
+      <VisuallyHiddenText
+        text="Contains undefined pills"
+      >
+        <span
+          className="visually-hidden-text"
+        >
+          Contains undefined pills
+        </span>
+      </VisuallyHiddenText>
+      <Pill
+        ariaExpanded={false}
+        ariaHasPopup={false}
+        label="pill label"
+      >
+        <div
+          aria-controls={false}
+          className="pill-container orion-fusion-theme"
+          data-terra-pills-show-focus-styles="true"
+        >
+          <div
+            className="pill-label"
+          >
+            pill label
+          </div>
+        </div>
+      </Pill>
+      <div
+        className="roll-up-pill"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        0 more...
+      </div>
+    </div>
+  </PillList>
+</ThemeContextProvider>
+`;
+
+exports[`should render a basic pill 1`] = `
+<div
+  aria-controls={false}
+  className="pill-container"
+  data-terra-pills-show-focus-styles="true"
+>
+  <div
+    className="pill-label"
+  >
+    label
+  </div>
+</div>
+`;
+
+exports[`should render a basic removable pill 1`] = `
+<div
+  aria-controls={false}
+  className="pill-container is-focusable"
+  data-terra-pills-show-focus-styles="true"
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <div
+    className="pill-label is-removable"
+  >
+    label
+  </div>
+  <div
+    className="pill-remove-button"
+    onClick={[Function]}
+  >
+    <span
+      className="clear-icon"
+    />
+  </div>
+  <VisuallyHiddenText
+    text=", pill is removable via Delete or Back Space key"
+  />
+</div>
+`;
+
+exports[`should render a disclosure and removable pill 1`] = `
+<div
+  aria-expanded={false}
+  className="pill-container is-focusable is-selectable is-selectable-and-removable"
+  data-terra-pills-show-focus-styles="true"
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <div
+    className="pill-label is-selectable is-removable is-selectable-and-removable"
+    onClick={[Function]}
+  >
+    label
+  </div>
+  <div
+    className="pill-remove-button"
+    onClick={[Function]}
+  >
+    <span
+      className="clear-icon"
+    />
+  </div>
+  <VisuallyHiddenText
+    text=", pill is selectable via Space Bar or Enter key and removable via Delete or Back Space key"
+  />
+</div>
+`;
+
+exports[`should render a disclosure pill 1`] = `
+<div
+  aria-expanded={false}
+  className="pill-container is-focusable is-selectable"
+  data-terra-pills-show-focus-styles="true"
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  role="button"
+  tabIndex="0"
+>
+  <div
+    className="pill-label is-selectable"
+    onClick={[Function]}
+  >
+    label
+  </div>
+  <VisuallyHiddenText
+    text=", pill is selectable via Space Bar or Enter key"
+  />
+</div>
+`;
+
+exports[`should render a pill list with aria-labelledby attribute 1`] = `
+<div>
+  <p
+    id="test-labelledby-label"
+  >
+    pill list labelledby label
+  </p>
+  <PillList
+    ariaLabel="pill list label"
+    ariaLabelledBy="test-labelledby-label"
+    isCollapsed={false}
+  >
+    <div
+      aria-labelledby="test-labelledby-label"
+      aria-live="polite"
+      aria-relevant="removals"
+      className="pill-list"
+    >
+      <VisuallyHiddenText
+        text="Contains undefined pills"
+      >
+        <span
+          className="visually-hidden-text"
+        >
+          Contains undefined pills
+        </span>
+      </VisuallyHiddenText>
+      <Pill
+        ariaExpanded={false}
+        ariaHasPopup={false}
+        label="pill label"
+      >
+        <div
+          aria-controls={false}
+          className="pill-container"
+          data-terra-pills-show-focus-styles="true"
+        >
+          <div
+            className="pill-label"
+          >
+            pill label
+          </div>
+        </div>
+      </Pill>
+      <div
+        className="roll-up-pill"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        0 more...
+      </div>
+    </div>
+  </PillList>
+</div>
+`;
+
+exports[`should render a standard pill list 1`] = `
+<div
+  aria-label="pill list label"
+  aria-live="polite"
+  aria-relevant="removals"
+  className="pill-list"
+>
+  <VisuallyHiddenText
+    text="Contains 2 pills"
+  />
+  <Pill
+    ariaExpanded={false}
+    ariaHasPopup={false}
+    label="pill label"
+  />
+  <Pill
+    ariaExpanded={false}
+    ariaHasPopup={false}
+    label="pill label"
+  />
+  <div
+    className="roll-up-pill"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    0 more...
+  </div>
+</div>
+`;
+
+exports[`should render a standard pill list 2`] = `
+<div
+  aria-label="pill list label"
+  aria-live="polite"
+  aria-relevant="removals"
+  className="pill-list"
+>
+  <VisuallyHiddenText
+    text="Contains undefined pills"
+  />
+  <Pill
+    ariaExpanded={false}
+    ariaHasPopup={false}
+    label="pill label"
+  />
+  <div
+    className="roll-up-pill"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    role="button"
+    tabIndex="0"
+  >
+    0 more...
+  </div>
+</div>
+`;

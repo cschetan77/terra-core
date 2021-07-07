@@ -18,11 +18,12 @@ const CollapsiblePillListFirstEllipsesPill = () => {
   };
 
   return (
-    <div className={cx(['container', 'show-border', 'width-200'])}>
+    <>
       <PillList
         ariaLabel="Pill Container"
         isCollapsed={isCollapsed}
         rollUpPillOnTrigger={handleRollUpPillOnClick}
+        className={cx(['container', 'show-border', 'width-200'])}
       >
         <Pill
           label="Very Long Label which should show ellipses"
@@ -32,7 +33,7 @@ const CollapsiblePillListFirstEllipsesPill = () => {
         />
       </PillList>
       <Button onClick={handleButtonOnClick}>Toggle Roll Up</Button>
-    </div>
+    </>
   );
 };
 
