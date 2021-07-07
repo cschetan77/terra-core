@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import classNamesBind from 'classnames/bind';
 import {
   KEY_SPACE,
@@ -15,15 +16,21 @@ const cx = classNamesBind.bind(styles);
 
 const propTypes = {
   /**
-   * The label text of the pill component.
+   * The label text for the pill. (Required)
    */
   label: PropTypes.string.isRequired,
+  /**
+   * The html `id` attribute for the pill.
+   */
+  id: PropTypes.string,
   /**
    * A callback function to execute when the pill is removed. If specified, the pill will be removable.
    */
   onRemove: PropTypes.func,
   /**
-   * A callback function to execute when the pill is selected. If specified, the pill will be selectable.
+   * A callback function to execute when the pill is selected. If specified, the pill label will be selectable.
+   *
+   * ![IMPORTANT](https://badgen.net/badge/UX/Design-Standards/blue) Intended to only be used to disclose a popup.
    */
   onSelect: PropTypes.func,
   /**
@@ -31,23 +38,51 @@ const propTypes = {
    */
   refCallback: PropTypes.func,
   /**
-   * Role attribute value to be assigned to the pill
+   * ![IMPORTANT](https://badgen.net/badge/UX/Accessibility/blue) Consumers need to set the `aria-haspopup`
+   * attribute to `true` when using a popup via 'onSelect'. Only applies when used along with the 'onSelect' prop.
    */
-  role: PropTypes.string,
+  ariaHasPopup: PropTypes.bool,
+  /**
+   * ![IMPORTANT](https://badgen.net/badge/UX/Accessibility/blue) Consumers need to set the `aria-expanded` attribute to `true`
+   * when using a popup via 'onSelect' and the popup is visible. Only applies when used along with the 'onSelect' prop.
+   */
+  ariaExpanded: PropTypes.bool,
+  /**
+   * ![IMPORTANT](https://badgen.net/badge/UX/Accessibility/blue) Consumers need to provide the string of the ID for the
+   * html element containing the popup content, so the `aria-controls` attribute can correctly be associated to the pill.
+   * Only applies when used along with the 'onSelect' prop.
+   */
+  ariaControls: PropTypes.string,
+  /**
+   * Tooltip to display if the pill label does not have enough space to display and will show as truncated, to be used
+   * in addition to a popup. Only applies when used along with the 'onSelect' prop.
+   */
+  title: PropTypes.string,
 };
 
 const defaultProps = {
+  id: undefined,
   onRemove: undefined,
   onSelect: undefined,
   refCallback: undefined,
+  ariaHasPopup: false,
+  ariaExpanded: false,
+  ariaControls: undefined,
+  title: undefined,
 };
 
 const Pill = (props) => {
   const {
     label,
+    id,
     onRemove,
     onSelect,
     refCallback,
+    ariaHasPopup,
+    ariaExpanded,
+    ariaControls,
+    title,
+    ...customProps
   } = props;
 
   const pillRef = useRef();
@@ -89,6 +124,7 @@ const Pill = (props) => {
 
   const pillButtonProps = {};
   if (onSelect) {
+    pillButtonProps.title = title;
     pillButtonProps.onClick = handleOnClick;
   }
 
@@ -99,37 +135,48 @@ const Pill = (props) => {
 
   let pillInteractionHint;
   if (onSelect && onRemove) {
-    pillInteractionHint = 'Pill is selectable via Space Bar or Enter key and removable via Delete or Back Space key';
+    pillInteractionHint = ', pill is selectable via Space Bar or Enter key and removable via Delete or Back Space key';
   } else if (onSelect) {
-    pillInteractionHint = 'Pill is selectable via Space Bar or Enter key';
+    pillInteractionHint = ', pill is selectable via Space Bar or Enter key';
   } else if (onRemove) {
-    pillInteractionHint = 'Pill is removable via Delete or Back Space key';
+    pillInteractionHint = ', pill is removable via Delete or Back Space key';
   }
 
   const theme = React.useContext(ThemeContext);
-  const pillClassNames = cx([
-    'pill-container',
-    { 'is-focusable': !!onSelect || !!onRemove },
-    { 'is-selectable': !!onSelect },
-    { 'is-selectable-and-removable': !!onSelect && !!onRemove },
-    theme.className,
-  ]);
+
+  const pillClassNames = classNames(
+    cx([
+      'pill-container',
+      { 'is-focusable': !!onSelect || !!onRemove },
+      { 'is-selectable': !!onSelect },
+      { 'is-selectable-and-removable': !!onSelect && !!onRemove },
+      theme.className,
+    ]),
+    customProps.className,
+  );
+
   const pillLabelClassNames = cx([
     'pill-label',
     { 'is-selectable': !!onSelect },
     { 'is-removable': !!onRemove },
     { 'is-selectable-and-removable': !!onSelect && !!onRemove },
   ]);
+
   const removeButtonClassNames = cx([
     'pill-remove-button',
   ]);
 
   return (
     <div
+      {...customProps}
       {...pillProps}
-      className={pillClassNames}
-      data-terra-pills-show-focus-styles="true"
+      id={id}
       ref={pillRef}
+      aria-haspopup={!!onSelect && ariaHasPopup ? true : undefined}
+      aria-expanded={!onSelect ? undefined : ariaExpanded}
+      aria-controls={!!onSelect && ariaControls}
+      data-terra-pills-show-focus-styles="true"
+      className={pillClassNames}
     >
       <div
         {...pillButtonProps}
