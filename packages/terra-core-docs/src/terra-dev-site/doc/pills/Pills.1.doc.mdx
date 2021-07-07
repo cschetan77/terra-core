@@ -5,6 +5,10 @@ import BasicPillExample from './example/BasicPill?dev-site-example';
 import BasicRemovablePillExample from './example/BasicRemovablePill?dev-site-example';
 import DisclosurePillExample from './example/DisclosurePill?dev-site-example';
 import DisclosureRemovablePillExample from './example/DisclosureRemovablePill?dev-site-example';
+import IntroductionToPillsExample from './example/IntroductionToPills?dev-site-example';
+import StandardPillListExample from './example/StandardPillList?dev-site-example';
+import CollapsiblePillListExample from './example/CollapsiblePillList?dev-site-example';
+import HandlingPillTruncationExample from './example/HandlingPillTruncation?dev-site-example';
 
 import PillListPropsTable from 'terra-pills/src/PillList?dev-site-props-table';
 import PillsPropsTable from 'terra-pills/src/Pill?dev-site-props-table';
@@ -39,9 +43,7 @@ There are two types of pills:
 ## Usage
 
 ```jsx
-import React from 'react';
 import PillList, { Pill } from 'terra-pills';
-
 ```
 
 ## Component Features
@@ -54,14 +56,109 @@ import PillList, { Pill } from 'terra-pills';
 <br/>
 <br/>
 
-## Examples
+## Introduction
+Pills can be added to a variety of situations and compositions to apply context.
+<IntroductionToPillsExample title="Introduction to Pills: Sample Article" />
 
+<br/>
+<br/>
+<br/>
+<br/>
+
+## How To Construct
+Pills in their most basic form are non-interactive and only display a label. The basic pills can also be configured to be removeable by using 
+the `onRemove` prop, which makes them interactive with the addition of a remove ("X") button.
 <BasicPillExample title="Basic Pill" />
 <BasicRemovablePillExample title="Removable Pill" />
+
+<br/>
+<br/>
+
+Pills can also disclose additional information by providing a popover (via terra-popup), which will make the label of the pill selectable.
 
 <DisclosurePillExample title="Basic Pill with a Popup" />
 <DisclosureRemovablePillExample title="Removable Pill with a Popup" />
 
+Providing a popup to the pill component requires additional construction considerations in order to make it properly accessible, since the
+popup component is not provided by default with the pills component.
+
+<Notice variant="important" ariaLevel="3">
+  Accessibility Considerations:
+
+  For accessibility best practices, the consumer should supply an `id` to the pill so that it can be referenced in the popup content with the
+  `aria-labelledby` attribute, as well as providing the popup content an `id` so that it can be referenced in the pill with the `ariaControls` 
+  prop. In addition, supplying the props for `ariaHasPopup` (will add 'aria-haspopup=true') as well as reporting the open or closed state of the
+  popup via `ariaExpanded` will let screenreaders properly announce the popup interactions.
+
+  ```diff
+      <Pill
+        label="Daniel Williams"
+  +     id={disclosurePillId}
+        onSelect={handleOnSelect}
+        refCallback={setPillNodeRef}
+  +     ariaHasPopup
+  +     ariaExpanded={state.isOpen}
+  +     ariaControls={disclosurePopupContentId}
+      />
+  ```
+  This below shows the helpful addition of the popup content `id` and the `aria-labelledby` attribute (supplied with the pill 'id'), which will greatly
+  increases the accessibility linkage between the pill button that launches the popup, and the content of the popup.
+  ```diff
+      <Popup
+        isOpen={state.isOpen}
+        isArrowDisplayed
+        targetRef={getPillNodeRef}
+        onRequestClose={handleOnRequestClose}
+        contentHeight="160"
+        contentWidth="240"
+      >
+  +     <Content id={disclosurePopupContentId} aria-labelledby={disclosurePillId}>
+           Popup Content Here
+        </Content>
+      </Popup>
+  ```
+
+</Notice>
+
+<br/>
+<br/>
+
+## Using Pill Lists
+However, in order to be used properly, pills should always be used within a Pill List, shown below. A pill list provides the consistency for displaying and
+managing a collection of pills, including making sure that the intent of the pills is declared with the `ariaLabel`, or provided a visible label with the 
+`ariaLabelledBy` prop. 
+<StandardPillListExample title="Standard Pill List" />
+
+<br/>
+
+Pill Lists also have the ability to be collapsible, restricting the display of pills to a single line when there are more pills that can display, and 
+automatically will insert a roll-up pill that contains the count of the number of pills not visible.
+<CollapsiblePillListExample title="Collapsible Pill List" />
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+## Truncation
+Pills are made to fill the available space on a single line without having the label wrap. However, there will be cases when the pill label may not fully display
+based on the situaiton it is being used in, and may need to truncate. 
+<Notice variant="ux-recommendation" ariaLevel="3">
+  Design Standard Consideration:
+
+  In the instance of a long label, truncation of the pill is allowed. Disclosure of the truncated text will need to be displayed using a popover.
+</Notice>
+If after testing, truncation does occur, a popup will need to be added to fully disclose the
+original label in its entirety. The label text may also be provided to the `title` prop to additionally show a tooltip on mouse hover.
+<br/>
+<br/>
+<HandlingPillTruncationExample title="How to handle pills that need to truncate" />
+
+
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
