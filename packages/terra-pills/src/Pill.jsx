@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { injectIntl } from 'react-intl';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import classNamesBind from 'classnames/bind';
@@ -58,6 +59,11 @@ const propTypes = {
    * in addition to a popup. Only applies when used along with the 'onSelect' prop.
    */
   title: PropTypes.string,
+  /**
+   * @private
+   * The intl object to be injected for translations.
+   */
+  intl: PropTypes.shape({ formatMessage: PropTypes.func }).isRequired,
 };
 
 const defaultProps = {
@@ -82,6 +88,7 @@ const Pill = (props) => {
     ariaExpanded,
     ariaControls,
     title,
+    intl,
     ...customProps
   } = props;
 
@@ -135,11 +142,11 @@ const Pill = (props) => {
 
   let pillInteractionHint;
   if (onSelect && onRemove) {
-    pillInteractionHint = ', pill is selectable via Space Bar or Enter key and removable via Delete or Back Space key';
+    pillInteractionHint = intl.formatMessage({ id: 'Terra.pills.pillHint.selectableAndRemovable' });
   } else if (onSelect) {
-    pillInteractionHint = ', pill is selectable via Space Bar or Enter key';
+    pillInteractionHint = intl.formatMessage({ id: 'Terra.pills.pillHint.selectable' });
   } else if (onRemove) {
-    pillInteractionHint = ', pill is removable via Delete or Back Space key';
+    pillInteractionHint = intl.formatMessage({ id: 'Terra.pills.pillHint.removable' });
   }
 
   const theme = React.useContext(ThemeContext);
@@ -200,4 +207,4 @@ const Pill = (props) => {
 Pill.propTypes = propTypes;
 Pill.defaultProps = defaultProps;
 
-export default Pill;
+export default injectIntl(Pill);

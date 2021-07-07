@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useRef, useState } from 'react';
 import { KEY_SPACE, KEY_RETURN } from 'keycode-js';
+import { injectIntl } from 'react-intl';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import classNamesBind from 'classnames/bind';
@@ -41,6 +42,11 @@ const propTypes = {
    * Callback function triggered on click/key press of the roll-up pill
    */
   rollUpPillOnTrigger: PropTypes.func,
+  /**
+   * @private
+   * The intl object to be injected for translations.
+   */
+  intl: PropTypes.shape({ formatMessage: PropTypes.func }).isRequired,
 };
 
 const defaultProps = {
@@ -59,6 +65,7 @@ const PillList = (props) => {
     children,
     isCollapsed,
     rollUpPillOnTrigger,
+    intl,
     ...customProps
   } = props;
 
@@ -142,7 +149,7 @@ const PillList = (props) => {
       role="button"
       tabIndex="0"
     >
-      {`${rollUpCount} more...`}
+      {intl.formatMessage({ id: 'Terra.pills.rollupPillLabel' }, { pillsNotVisibleCount: rollUpCount })}
     </div>
   );
 
@@ -165,7 +172,7 @@ const PillList = (props) => {
       aria-relevant="removals"
       className={pillListClassNames}
     >
-      <VisuallyHiddenText text={`Contains ${children.length} pills`} />
+      <VisuallyHiddenText text={intl.formatMessage({ id: 'Terra.pills.pillListHint' }, { numberOfPills: children.length })} />
       {children}
       {rollUpPill}
     </div>
@@ -175,5 +182,5 @@ const PillList = (props) => {
 PillList.propTypes = propTypes;
 PillList.defaultProps = defaultProps;
 
-export default PillList;
+export default injectIntl(PillList);
 export { Pill };

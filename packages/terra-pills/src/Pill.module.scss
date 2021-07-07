@@ -157,10 +157,11 @@
     line-height: var(--terra-pills-roll-up-pill-line-height, 1.25);
     margin: var(--terra-pills-roll-up-pill-margin, 0.35714rem);
     outline: none;
-    padding-bottom: var(--terra-pills-roll-up-pill-padding-bottom, 0.28571rem);
-    padding-left: var(--terra-pills-roll-up-pill-padding-left, 0.71428rem);
-    padding-right: var(--terra-pills-roll-up-pill-padding-right, 0.71428rem);
+    padding-bottom: var(--terra-pills-roll-up-pill-padding-bottom, 0.21428rem);
+    padding-left: var(--terra-pills-roll-up-pill-padding-left, 0.64285rem);
+    padding-right: var(--terra-pills-roll-up-pill-padding-right, 0.64285rem);
     padding-top: var(--terra-pills-roll-up-pill-padding-top, 0.28571rem);
+
 
     &[data-terra-pills-show-focus-styles='true']:focus {
       border-color: var(--terra-pills-roll-up-pill-focus-border-color, #868a8c);
