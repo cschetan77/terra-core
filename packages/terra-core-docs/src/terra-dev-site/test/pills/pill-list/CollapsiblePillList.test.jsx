@@ -18,7 +18,7 @@ const CollapsiblePillList = () => {
   };
 
   return (
-    <>
+    <div className={cx('spacing-wrapper')}>
       <PillList
         ariaLabel="Pill Container"
         isCollapsed={isCollapsed}
@@ -42,7 +42,7 @@ const CollapsiblePillList = () => {
         />
       </PillList>
       <Button onClick={handleButtonOnClick}>Toggle Roll Up</Button>
-    </>
+    </div>
   );
 };
 

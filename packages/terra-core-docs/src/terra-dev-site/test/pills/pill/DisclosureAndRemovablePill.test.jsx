@@ -1,6 +1,10 @@
 import React, { useRef, useState } from 'react';
+import classNames from 'classnames/bind';
 import Popup from 'terra-popup';
 import { Pill } from 'terra-pills';
+import styles from '../pill-list/PillListTestCommon.module.scss';
+
+const cx = classNames.bind(styles);
 
 const DisclosureAndRemovablePill = () => {
   const [open, setOpen] = useState(false);
@@ -28,7 +32,7 @@ const DisclosureAndRemovablePill = () => {
   };
 
   return (
-    <>
+    <div className={cx('spacing-wrapper')}>
       {isRemoved && (
         <>
           <Pill
@@ -53,7 +57,7 @@ const DisclosureAndRemovablePill = () => {
           </Popup>
         </>
       )}
-    </>
+    </div>
   );
 };
 
