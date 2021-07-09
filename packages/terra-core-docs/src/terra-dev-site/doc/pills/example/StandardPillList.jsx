@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import PillList, { Pill } from 'terra-pills';
-import styles from './PillsExamplesCommon.module.scss';
+import styles from './PillsDocExampleCommon.module.scss';
 
 const cx = classNames.bind(styles);
 

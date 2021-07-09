@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { Button } from '@cerner/terra-docs';
 import TerraButton from 'terra-button';
+import Toolbar from 'terra-toolbar';
 import PillList, { Pill } from 'terra-pills';
+import ThemeContext from 'terra-theme-context';
 import classNames from 'classnames/bind';
-import styles from './PillsExamplesCommon.module.scss';
+import styles from './PillsDocExampleCommon.module.scss';
 
 const cx = classNames.bind(styles);
 
 const CollapsiblePillList = () => {
+  const theme = React.useContext(ThemeContext);
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handleRollUpPillOnClick = () => {
@@ -29,7 +32,8 @@ const CollapsiblePillList = () => {
   };
 
   return (
-    <>
+    <div className={cx(['terra-pills-doc-example-applied-filters', theme.className])}>
+      <Toolbar />
       <div className={cx('collapsible-pill-list-example')}>
         <p
           id="terra-pills-example-collapsible-pill-list-label"
@@ -88,7 +92,7 @@ const CollapsiblePillList = () => {
       <br />
       <br />
       <Button onClick={handleButtonOnClick} disabled={isCollapsed} className={cx('toggle-active-button')}>Manually toggle roll-up and collapsing Pill-List (for example only)</Button>
-    </>
+    </div>
   );
 };
 

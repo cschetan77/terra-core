@@ -112,8 +112,11 @@ popup component is not provided by default with the pills component.
         contentHeight="160"
         contentWidth="240"
       >
-  +     <Content id={disclosurePopupContentId} aria-labelledby={disclosurePillId}>
-           Popup Content Here
+        <Content 
+  +       id={disclosurePopupContentId} 
+  +       aria-labelledby={disclosurePillId}
+        >
+           {popupContentHere}
         </Content>
       </Popup>
   ```

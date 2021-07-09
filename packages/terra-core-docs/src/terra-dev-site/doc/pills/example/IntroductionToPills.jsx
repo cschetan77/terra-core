@@ -5,7 +5,7 @@ import CellGrid, { Cell } from 'terra-cell-grid';
 import Image from 'terra-image';
 import PillList, { Pill } from 'terra-pills';
 import ArticlePhoto from '../../../common/images/creative-commons/20384488141_e08573b033__399x314.jpg';
-import styles from './PillsExamplesCommon.module.scss';
+import styles from './PillsDocExampleCommon.module.scss';
 
 const cx = classNames.bind(styles);
 

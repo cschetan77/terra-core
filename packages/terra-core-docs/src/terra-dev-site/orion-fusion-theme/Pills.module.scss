@@ -1,0 +1,45 @@
+:local {
+  .orion-fusion-theme {
+    /* -----------------------------------------------
+     * |  Pills  |            Doc                    |
+     * ----------------------------------------------- */
+    
+    // Truncation Example
+    --terra-core-docs-pills-doc-example-handling-truncation-label-color: rgba(28, 31, 33, 0.85);
+    --terra-core-docs-pills-doc-example-handling-truncation-label-font-size: 1rem;
+    --terra-core-docs-pills-doc-example-handling-truncation-label-margin-bottom: 0.25rem;
+    --terra-core-docs-pills-doc-example-handling-truncation-label-margin-top: 0.25rem;
+     
+    --terra-core-docs-pills-doc-example-handling-truncation-space-between-margin-top: 2rem;
+   
+    --terra-core-docs-pills-doc-example-handling-truncation-outer-container-border-left: 2px dashed #bd10e0;
+    --terra-core-docs-pills-doc-example-handling-truncation-outer-container-border-right: 2px dashed #bd10e0;
+    --terra-core-docs-pills-doc-example-handling-truncation-outer-container-padding-left: 4px;
+    --terra-core-docs-pills-doc-example-handling-truncation-outer-container-padding-right: 4px;
+ 
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-background-color: rgba(249, 138, 236, 0.04);
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-border-bottom: 1px dashed rgba(119, 85, 126, 0.25);
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-border-left: 2px dashed #bd10e0;
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-border-right: 2px dashed #bd10e0;
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-border-top: 1px dashed rgba(189, 16, 224, 0.25);
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-box-shadow: 4px 0 0 0 rgba(189, 16, 224, 0.15), -4px 0 0 0 rgba(189, 16, 224, 0.15);
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-padding-bottom: 4px;
+    --terra-core-docs-pills-doc-example-handling-truncation-pill-list-padding-top: 4px;
+ 
+    --terra-core-docs-pills-doc-example-handling-truncation-protection-min-width: 10.5rem;
+    --terra-core-docs-pills-doc-example-handling-truncation-protection-width: 50%;
+    --terra-core-docs-pills-doc-example-handling-truncation-forced-width: 8.75rem;    
+ 
+    // Truncation Example Popup
+    --terra-core-docs-pills-doc-example-handling-truncation-popup-content-padding: 0.25rem 0.5rem;
+    --terra-core-docs-pills-doc-example-handling-truncation-popup-content-line-height: 1.25;
+
+
+    /* -----------------------------------------------
+     * |  Pills  |            Test                   |
+     * ----------------------------------------------- */
+
+    // Pills: Test 
+    --terra-variable-2: #1d2427;
+  }
+}
