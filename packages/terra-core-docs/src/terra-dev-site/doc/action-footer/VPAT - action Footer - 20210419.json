@@ -1,0 +1,1150 @@
+{
+  "ComponentName": "Terra Action Footer",
+  "PlatformType": "Terra",
+  "ComponentVersion": "2.58.0",
+  "ComponentDescription": "An action footer is a user interface (UI) component that provides common actions in the form of pre-arranged buttons and hyperlinks, as well as dividers to segment groups of actions. Action footers are the lowest level of content within a container and can be used within the layout of a page to divide and organize content in meaningful ways. They provide the users with actions that can be associated with the content that lives within the container.\r\n",
+  "HowThisComponentWillBeUsed": "Module",
+  "ComponentOptions": "Standard Action Footer\r\n- Single Start Action\r\n- Centered Action Footer\r\n- Multiple Start and End Actions\r\nCenterted Action Footer\r\n- Single  Action\r\n- Multiple Actions\r\nBlock Action Footer\r\n- Single  Action\r\n- Multiple Actions",
+  "DateOfReport": "March 04, 2021",
+  "VPATReportVersion": 1,
+  "TesterInfo": "David Gustafson, Senior Software Testing Engineer, David_Gustafson@epam.com\r\nFrederick Pollnitz, Sr. User Experience Designer, C_pollnitz.frederick@cerner.com",
+  "Notes": "",
+  "Results": {
+    "1.1.1 Non-text Content": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that would not be applicable to this criterion. \r\n\r\nTerra provides Consuming teams the ability to include images which would need alternative content.\r\n\r\nConsuming teams must ensure appropriate alternate content is added to meaningful content.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.2.1 Audio-only and Video-only (Prerecorded)": {
+      "conformance": "Not Applicable",
+      "explanation": "Product does not contain media. \r\n\r\nThe implementing team must ensure this criterion is met if media is added.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.2.2 Captions (Prerecorded)": {
+      "conformance": "Not Applicable",
+      "explanation": "Product does not contain media. \r\n\r\nThe implementing team must ensure this criterion is met if media is added.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.2.3 Audio Description or Media Alternative (Prerecorded)": {
+      "conformance": "Not Applicable",
+      "explanation": "Product does not contain media. \r\n\r\nThe implementing team must ensure this criterion is met if media is added.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.3.1 Info and Relationships": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that can hold interactive content. It does not create any visual relationships that must be conveyed programmatically for users to understand or use the component.\r\n\r\nTerra does provide the ability to include interactive elements within the Action Footer.\r\n\r\nConsuming teams must ensure that any meaningful context that is provided visually is also programmatically determined.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.3.2 Meaningful Sequence": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer is a container that would support meaningful sequence of content. The visual presentation of the native container does not convey any meaningful order. Content within the Action Footer would be read in the order of the code.\r\n\r\nTerra provides implementing teams the ability to add content to the Action Footer in whatever order they need for a meaningful sequence. \r\n\r\nConsuming teams must ensure any content added to Terra Action Footer is added in a way that supports the meaningful sequence of the reading order.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.3.3 Sensory Characteristics": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra does not provide any instructions within the UI. \r\n\r\nConsuming teams must review their content to ensure sensory characteristics are not included within any instructions. For example:\r\n\"Click on the green pencil\" would require users to have both perception of color and sight.\r\n\r\n\"Listen for the beep\" would require a user to hear.\r\n\r\n\"Select the star at the top of the page\" would require the user to see the star and know where at the top to find it.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.4.1 Use of Color": {
+      "conformance": "Supports",
+      "explanation": "Terra components do rely on color alone to convey information.\r\n\r\nConsuming teams must ensure color is not the only method used to convey information to the user. Instead, use both color and a shape or text.\r\n\r\nFor example:\r\nInstead of a range of color slivers to convey a status, use words to communicate the status in addition to the colors.\r\n\r\nInstead of a single shape indicator in different colors, use different shapes in addition to color to represent different categories on a chart.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.4.2 Audio Control": {
+      "conformance": "Not Applicable",
+      "explanation": "No audio plays upon opening screens in product.\r\n\r\nConsuming teams must ensure this criterion is met if media is added to the product.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.1.1 Keyboard": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nTerra Action Footer supports including interactive elements within it.\r\n\r\nConsuming teams must ensure that all interactable elements can receive focus, be interacted with, and are able to be acted upon.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.1.2 No Keyboard Trap": {
+      "conformance": "Supports",
+      "explanation": "User is able to focus in and out of Terra Action Footer without encountering a keyboard trap when interactive elements are used within it.\r\n\r\nConsuming teams must ensure no keyboard traps are introduced into code.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.1.4 Character Key Shortcuts": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer does not have any character-key (single-letter) shortcuts.\r\n\r\nConsuming teams must ensure this criterion is met and not implement a single key shortcut without the ability to turn off, remap the key, or be available only when a component has focus.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.2.1 Timing Adjustable": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container. Any interactive elements placed within it should not have a time limit.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.2.2 Pause, Stop, Hide": {
+      "conformance": "Not Applicable",
+      "explanation": "Nothing autoplays or moves in application.\r\n\r\nConsuming teams must ensure this criterion is met if media is added to the product.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.3.1 Three Flashes or Below Threshold": {
+      "conformance": "Supports",
+      "explanation": "Product contains no flashing or flickering that would cause seizures or migraines.\r\n\r\nConsuming teams must ensure this criterion is met if media is added to the product.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.4.1 Bypass Blocks": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra components are independent of the page. Terra does provide other components that support methods to implement bypass blocks\r\n\r\nConsuming teams must ensure methods are employed to meet this criterion.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.4.2 Page Titled": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is independent of the whole page.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.4.3 Focus Order": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container and does not receive focus itself.\r\n\r\nTerra supports the ability to include interactive components within Action Footer and will receive focus in the order of the code. \r\n\r\nConsuming teams must ensure the focus order is expected and preserves page meaning. Consuming teams must also ensure not to implement a tab index value greater than zero.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.4.4 Link Purpose (In Context)": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that would not be applicable to this criterion as the sample provided contains no links. \r\n\r\nTerra Action Footer provides the ability for Consuming teams to create links within the Action Footer. \r\n\r\nConsuming teams must ensure that the purpose of links are visually and programmatically available.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.5.1 Pointer Gestures": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra components do not require multipoint or path based gestures to operate. ",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.5.2 Pointer Cancellation": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that would not be applicable to this criterion because it has no interactions. \r\n\r\nTerra provides the ability to add interactable elements to the container. Any interactable elements used within the Action Footer would be required to meet this criterion.\r\n\r\nConsuming teams must ensure that actions are not activated by the down action, allowing the user to cancel interactions.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.5.3 Label in Name": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a module that contains other components. It does not have a label.\r\n\r\nTerra provides the ability for Consuming teams to add interactive content inside the Action Footer with a visual and programmatic label to components.\r\n\r\nConsuming teams must ensure the programmatic label matches the visual label when interactable elements are included with this component. ",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "2.5.4 Motion Actuation": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra does not provide any motion based functionality. \r\n\r\nIf motion based functionality is implemented, Consuming teams would be responsible to ensure this requirement is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "3.1.1 Language of Page": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is independent of language.\r\n\r\nConsuming teams must ensure the appropriate LANG attribute value is set to ensure language of the page can be programmatically determined.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "3.2.1 On Focus": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container of other components, and does not initiate a change of context (or anything unexpected).\r\n\r\nConsuming teams must ensure no unexpected change of context happens when interactive elements receive focus.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "3.2.2 On Input": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that would not be applicable to this criterion because it is not an input. Contents within the Action Footer must meet this requirement. \r\n\r\nConsuming teams must ensure that nothing unexpected happens when interactive elements are incorporated into the component.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "3.3.1 Error Identification": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container and therefore would never cause errors. Contents within the Action Footer must meet this requirement. \r\n\r\nTerra provides the ability to identify errors within forms.\r\n\r\nConsuming teams must ensure error identification is provided when implementing forms.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "3.3.2 Labels or Instructions": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that does not require input.  \r\n\r\nHowever, Terra provides the ability to include interactive content within the Action Footer.\r\n\r\nConsuming teams must ensure labels and instructions are provided when needed to ensure users know what is expected.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "4.1.1 Parsing": {
+      "conformance": "Supports",
+      "explanation": "Terra components are tested and validated before release to ensure proper parsing of code.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "4.1.2 Name, Role, Value": {
+      "conformance": "Not Applicable",
+      "explanation": "Name, Role, and Value does not apply to Terra Action Footer because it is not an actionable element.\r\n\r\nTerra provides the ability to add content within action footer.\r\n \r\nConsuming teams must ensure that any content inside Action Footer meets this criterion.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level A"
+    },
+    "1.2.4 Captions (Live)": {
+      "conformance": "Not Applicable",
+      "explanation": "Product does not contain media. \r\n\r\nThe implementing team must ensure this criterion is met if media is added.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.2.5 Audio Description (Prerecorded)": {
+      "conformance": "Not Applicable",
+      "explanation": "Product does not contain media. \r\n\r\nThe implementing team must ensure this criterion is met if media is added.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.3.4 Orientation": {
+      "conformance": "Supports",
+      "explanation": "Terra components operate independent of orientation.\r\n\r\nConsuming teams must ensure all components meet this requirement.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.3.5 Identify Input Purpose": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra components are not available to auto-population.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.4.3 Contrast (Minimum)": {
+      "conformance": "Supports",
+      "explanation": "Content in the library examples within Terra Action Footer meets the appropriate contrast ratios. \r\n\r\nTerra Action Footer provides the ability to include other actionable elements within Action Footer.\r\n\r\nConsuming teams must ensure any content used within Terra Action Footer meets the proper contrast ratios for this criterion to be met.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.4.4 Resize text": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer supports resizing and zooming without loss of information or function.\r\n\r\nConsuming teams must ensure content other than captions and images of text can be up to 200 percent without loss of content or functionality.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.4.5 Images of Text": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that would not be applicable to this criterion because it is not an image. \r\n\r\nHowever, Terra provides the ability to add images within Terra Action Footer. Any images used within the Action Footer must meet this requirement. \r\n\r\nImages of text are discouraged.\r\n\r\nConsuming teams must ensure this criterion is met with any content used within Terra Action Footer.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.4.10 Reflow": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer supports reflow when the viewport is resized to 320x256 px without scrolling in two directions or loss of information or functionality.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.4.11 Non-Text Contrast": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer is a container that does not have non-text-content that conveys information to the user. The border is not required for users to understand the content it contains. \r\n\r\nTerra provides the ability to include non-text elements within the Terra Action Footer. Any non-text content used within the Action Footer must meet this requirement.\r\n\r\nConsuming teams must ensure that any non-text content that conveys meaning to the user meet the 3:1 contrast ratio.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.4.12 Text Spacing": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer supports altering multiple CSS attributes without loss of function or information.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "1.4.13 Content on Hover or Focus": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container of other components. The Action footer itself does not have a hover. \r\n\r\nTerra provides the ability on add content to action footer. Any content used within Action Footer may potentially have content on hover or focus.\r\n\r\nConsuming teams must ensure that any content on hover or focus, other than the tool tip from the TITLE attribute, meets this criterion.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "2.4.5 Multiple Ways": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is independent of the whole page.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "2.4.6 Headings and Labels": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that does not have a label or heading. However, Terra Action Footer can include actionable components which must meet this requirement.\r\n\r\nTerra Action Footer provides the ability for teams to create a meaningful label.\r\n\r\nConsuming teams must ensure headings and labels use text that appropriately describes the topic or purpose it represents.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "2.4.7 Focus Visible": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action footer is a container and does not receive focus itself. \r\n\r\nTerra supports including interactive components within Action Footer.\r\n\r\nConsuming teams must ensure visible focus is maintained on interactive elements used within the Terra Action Footer.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "3.1.2 Language of Parts": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer is independent of language. If Table elements are labeled with a differing language of the page being used, Terra supports the ability to accurately reflect the correct language of the table element.\r\n\r\nTerra supports the ability to implement individual or specific language attributes on parts.\r\n\r\nConsuming teams must ensure the appropriate LANG attribute value is applied, if/where applicable, to ensure any content not of the same language of the page can be programmatically understood as a the correct language.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "3.2.3 Consistent Navigation": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is independent of the whole page.\r\n\r\nConsuming teams must ensure when navigation is used, that it remains consistent from page to page.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "3.2.4 Consistent Identification": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is only a container that does not have any inherent functionality. \r\n\r\nTerra supports the ability to add buttons and links within the Action Footer.\r\n\r\nConsuming teams must ensure to consistently identify elements within the Action Footer used for the same functionality.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "3.3.3 Error Suggestion": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that would not be applicable to this criterion because the examples given in the Terra library do not contain form elements which could generate an error. \r\n\r\nHowever, Terra provides the ability to include applicable content within the Action Footer which must meet this requirement. \r\n\r\nTerra provides the ability to include error suggestion when forms are validated.\r\n\r\nConsuming teams must ensure error suggestion is provided when implementing forms.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "3.3.4 Error Prevention (Legal, Financial, Data)": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer is a container that is independent of forms and validation. Contents within the Action Footer that drive form validation must meet this requirement. \r\n\r\nIt is incumbent upon consuming teams to make sure that this requirement is met when forms are provided within a product.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "4.1.3 Status Messages": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer contains no status message.\r\n\r\nTerra provides the ability for Consuming teams to add the programmatically knowable status messages. \r\n\r\nConsuming teams must ensure any status messages are implemented correctly to ensure programmatic availability.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "WCAG 2.1",
+      "criteriaGroup": "Level AA"
+    },
+    "501.1 Scope - Incorporation of WCAG 2.0 AA": {
+      "conformance": "Heading Cell",
+      "explanation": "Heading Cell",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502 Interoperability with Assistive Technology": {
+      "conformance": "Heading Cell",
+      "explanation": "Heading Cell",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.2.1 User Control of Accessibility Features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.2.2 No Disruption of Accessibility Features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3 Accessibility Services": {
+      "conformance": "See WCAG 2.1 section",
+      "explanation": "See WCAG 2.1 section",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.1 Object Information": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.2 Modification of Object Information": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.3 Row, Column, and Headers": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.4 Values": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.5 Modification of Values": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.6 Label Relationships": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.7 Hierarchical Relationships": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.8 Text": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.9 Modification of Text": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.10 List of Actions": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.11 Actions on Objects": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.12 Focus Cursor": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.13 Modification of Focus Cursor": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.3.14 Event Notification": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "502.4 Platform Accessibility Features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "503 Applications": {
+      "conformance": "Heading Cell - No Response required",
+      "explanation": "Heading Cell - No Response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "503.2 User Preferences": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "503.3 Alternative User Interfaces": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "503.4 User Controls for Captions and Audio Description": {
+      "conformance": "Heading Cell - No Response required",
+      "explanation": "Heading Cell - No Response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "503.4.1 Caption Controls": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "503.4.2 Audio Description Controls": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "504 Authoring Tools": {
+      "conformance": "Heading Cell - No Response required",
+      "explanation": "Heading Cell - No Response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "504.2 Content Creation or Editing (if not authoring tool, enter “not applicable”)": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "504.2.1 Preservation of Information Provided for Accessibility in Format Conversion": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "504.2.2 PDF Export": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "504.3 Prompts": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "504.4 Templates": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 5: Software"
+    },
+    "601.1 Scope": {
+      "conformance": "Heading Cell - No Response required",
+      "explanation": "Heading Cell - No Response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "602 Support Documentation": {
+      "conformance": "Heading Cell - No Response required",
+      "explanation": "Heading Cell - No Response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "602.2 Accessibility and Compatibility Features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "602.3 Electronic Support Documentation": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "602.4 Alternate Formats for Non-Electronic Support Documentation": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "603 Support Services": {
+      "conformance": "Heading Cell - No Response required",
+      "explanation": "Heading Cell - No Response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "603.2 Information on Accessibility and Compatibility Features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "603.3 Accommodation of Communication Needs": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 6: Support Documentation Services"
+    },
+    "302.1 Without Vision": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nTerra Action Footer supports including interactive elements within it.\r\n\r\nConsuming teams must ensure that all interactable elements can receive focus, be interacted with, and are able to be acted upon.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.2 With Limited Vision": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer is available for alternative mode of operation and responsively resize to 400%.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.3 Without Perception of Color": {
+      "conformance": "Supports",
+      "explanation": "Terra components do not require perception of color to operate. \r\n\r\nConsuming teams must ensure color alone is not the only method of conveying information.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.4 Without Hearing": {
+      "conformance": "Supports",
+      "explanation": "This component can be used to create a meaningful experience for someone who is deaf because the product doesn't have any sound. \r\n\r\nConsuming teams must ensure this criterion is met if audio is added to the component.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.5 With Limited Hearing": {
+      "conformance": "Supports",
+      "explanation": "This component can be used to create a meaningful experience for someone who is hard of hearing because the product doesn't have any sound. \r\n\r\nConsuming teams must ensure this criterion is met if audio is added to the component.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.6 Without Speech": {
+      "conformance": "Supports",
+      "explanation": "This component can be used to create a meaningful experience for someone who has a speech impediment or lack of speech because the product doesn't require speech.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.7 With Limited Manipulation": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nHowever, Terra Action Footer supports including interactive elements within it which can be used to create a meaningful experience for people with limited manipulation because they provide, within the container, standard size click targets and do not require fine motor skills or simultaneous keyboard commands.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.8 With Limited Reach and Strength": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nHowever, Terra Action Footer supports including interactive elements within it which can be used to create a meaningful experience for people with limited reach and strength because elements within the container support assistive technology and do not rely on a user's reach or specific strength to operate.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "302.9 With Limited Language, Cognitive, and Learning Abilities": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nHowever, Terra Action Footer supports including interactive elements within it which can be used to create a meaningful experience for people with limited language, cognitive, and learning abilities when consuming teams implement elements within the container with proper labels, instructions, and following best practice.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "Section 508",
+      "criteriaGroup": "Chapter 3: Functional Performance Criteria (FPC)"
+    },
+    "4.2.1 Usage without vision": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nTerra Action Footer supports including interactive elements within it.\r\n\r\nConsuming teams must ensure that all interactable elements can receive focus, be interacted with, and are able to be acted upon.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.2 Usage with limited vision": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer is available for alternative mode of operation and responsively resize to 400%.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.3 Usage without perception of colour": {
+      "conformance": "Supports",
+      "explanation": "Terra components do not require perception of color to operate. \r\n\r\nConsuming teams must ensure color alone is not the only method of conveying information.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.4 Usage without hearing": {
+      "conformance": "Supports",
+      "explanation": "This component can be used to create a meaningful experience for someone who is deaf because the product doesn't have any sound. \r\n\r\nConsuming teams must ensure this criterion is met if audio is added to the component.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.5 Usage with limited hearing": {
+      "conformance": "Supports",
+      "explanation": "This component can be used to create a meaningful experience for someone who is hard of hearing because the product doesn't have any sound. \r\n\r\nConsuming teams must ensure this criterion is met if audio is added to the component.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.6 Usage without vocal capability": {
+      "conformance": "Supports",
+      "explanation": "This component can be used to create a meaningful experience for someone who has a speech impediment or lack of speech because the product doesn't require speech.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.7 Usage with limited manipulation or strength": {
+      "conformance": "Not Applicable",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nHowever, Terra Action Footer supports including interactive elements within it which can be used to create a meaningful experience for people with limited manipulation because they provide, within the container, standard size click targets and do not require fine motor skills or simultaneous keyboard commands.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.8 Usage with limited reach": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nHowever, Terra Action Footer supports including interactive elements within it which can be used to create a meaningful experience for people with limited reach and strength because elements within the container support assistive technology and do not rely on a user's reach or specific strength to operate.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.9 Minimize photosensitive seizure triggers": {
+      "conformance": "Supports",
+      "explanation": "Product contains no flashing or flickering that would cause seizures or migraines.\r\n\r\nConsuming teams must ensure this criterion is met if media is added to the product.",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.10 Usage with limited cognition": {
+      "conformance": "Supports",
+      "explanation": "Terra Action Footer does not receive keyboard focus and is not actionable by itself.\r\n\r\nHowever, Terra Action Footer supports including interactive elements within it which can be used to create a meaningful experience for people with limited language, cognitive, and learning abilities when consuming teams implement elements within the container with proper labels, instructions, and following best practice.\r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "4.2.11 Privacy": {
+      "conformance": "Supports",
+      "explanation": "Terra components are independent of the user. \r\n\r\nConsuming teams must ensure this criterion is met.",
+      "followup": false,
+      "occurrences": 1,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 4: 4.2 Functional Performance Statements"
+    },
+    "Chapter 7: ICT with Video Capabilities": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.1 Caption processing technology": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.1.1 Captioning playback": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.1.2 Captioning synchronization": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.1.3 Preservation of captioning": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.2.1 Audio description playback": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.2.2 Audio description synchronization": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.2.3 Preservation of audio description": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "7.3 User controls for captions and audio description": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 7: ICT with Video Capabilities"
+    },
+    "11.0 General (informative)": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.1.1.1 through 11.4.1.3": {
+      "conformance": "See WCAG 2.1 section",
+      "explanation": "See WCAG 2.1 section",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5 Interoperability with assistive technology": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.1 Closed functionality": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2 Accessibility services": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.1 Platform accessibility service support for software that provides a user interface": {
+      "conformance": "See 11.5.2.5 through 11.5.2.17",
+      "explanation": "See information in 11.5.2.5 through 11.5.2.17",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.2 Platform accessibility service support for assistive technologies": {
+      "conformance": "See 11.5.2.5 through 11.5.2.17",
+      "explanation": "See information in 11.5.2.5 through 11.5.2.17",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.3 Use of accessibility services": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.4 Assistive technology": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.5 Object information": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.6 Row, column, and headers": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.7 Values": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.8 Label relationships": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.9 Parent-child relationships": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.10 Text": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.11 List of available actions": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.12 Execution of available actions": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.13 Tracking of focus and selection attributes": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.14 Modification of focus and selection attributes": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.15 Change notification": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.16 Modifications of states and properties": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.5.2.17 Modifications of values and text": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.6 Documented accessibility usage": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.6.1 User control of accessibility features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.6.2 No disruption of accessibility features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.7 User preferences": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.8 Authoring tools": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.8.1 Content technology": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.8.2 Accessible content creation": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.8.3 Preservation of accessibility information in transformations": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.8.4 Repair assistance": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "11.8.5 Templates": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 11: Software"
+    },
+    "12.1 Product documentation": {
+      "conformance": "Heading cell - no response required",
+      "explanation": "Heading cell - no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 12: Documentation and Support Services"
+    },
+    "12.1.1 Accessibility and compatibility features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 12: Documentation and Support Services"
+    },
+    "12.1.2 Accessible documentation": {
+      "conformance": "See WCAG 2.1 section",
+      "explanation": "See WCAG 2.1 section",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 12: Documentation and Support Services"
+    },
+    "12.2 Support Services": {
+      "conformance": "Heading cell – no response required",
+      "explanation": "Heading cell – no response required",
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 12: Documentation and Support Services"
+    },
+    "12.2.2 Information on accessibility and compatibility features": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 12: Documentation and Support Services"
+    },
+    "12.2.3 Effective communication": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 12: Documentation and Support Services"
+    },
+    "12.2.4 Accessible documentation": {
+      "followup": false,
+      "occurrences": 0,
+      "standard": "EN 301 549 Report",
+      "criteriaGroup": "Chapter 12: Documentation and Support Services"
+    }
+  }
+}

@@ -1,0 +1,2101 @@
+{
+  "criteria": {
+    "1.1.1 Non-text Content": {
+      "impact": "M",
+      "criteriaText": "1.1.1 Non-text Content: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below. (Level A)\r\n\r\nControls, Input: If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.)\r\n\r\nTime-Based Media: If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.)\r\n\r\nTest: If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content.\r\n\r\nSensory: If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content.\r\n\r\nCAPTCHA: If the purpose of non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities.\r\n\r\nDecoration, Formatting, Invisible: If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.",
+      "criteriaShorthand": "1.1.1 Non-text Content",
+      "criteriaNumber": "1.1.1",
+      "disability": [
+        "Blindness",
+        "Deafness",
+        "Cognitive Disabilities",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Magnifier",
+        "Braille reader"
+      ],
+      "related": [
+        "4.1.2",
+        "502.3.1"
+      ],
+      "confusedWith": [
+        "1.4.5"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.2.1 Audio-only and Video-only (Prerecorded)": {
+      "impact": "M",
+      "criteriaText": "1.2.1 Audio-only and Video-only (Prerecorded): For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such: (Level A)\r\n\r\nPrerecorded Audio-only: An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.\r\n\r\nPrerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.",
+      "criteriaShorthand": "1.2.1 Audio-only and Video-only (Prerecorded)",
+      "criteriaNumber": "1.2.1",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Deafness",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Media",
+        "Braille reader"
+      ],
+      "related": [
+        "1.2.2",
+        "1.2.3",
+        "1.2.5"
+      ],
+      "confusedWith": [
+        "1.2.2",
+        "1.2.3"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.2.2 Captions (Prerecorded)": {
+      "impact": "H",
+      "criteriaText": "1.2.2 Captions (Prerecorded): Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+      "criteriaShorthand": "1.2.2 Captions (Prerecorded)",
+      "criteriaNumber": "1.2.2",
+      "disability": [
+        "Deafness",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Media",
+        "Braille reader"
+      ],
+      "related": [
+        "1.2.4"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.2.3 Audio Description or Media Alternative (Prerecorded)": {
+      "impact": "M",
+      "criteriaText": "1.2.3 Audio Description or Media Alternative (Prerecorded): An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. ",
+      "criteriaShorthand": "1.2.3 Audio Description or Media Alternative (Prerecorded)",
+      "criteriaNumber": "1.2.3",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities (autism)",
+        "Deafness"
+      ],
+      "endUserTool": [
+        "Media",
+        "Braille reader"
+      ],
+      "related": [
+        "1.2.5"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.2.4 Captions (Live)": {
+      "impact": "L",
+      "criteriaText": "1.2.4 Captions (Live): Captions are provided for all live audio content in synchronized media.",
+      "criteriaShorthand": "1.2.4 Captions (Live)",
+      "criteriaNumber": "1.2.4",
+      "disability": [
+        "Deafness",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Media",
+        "Braille reader"
+      ],
+      "related": [
+        "1.2.2"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.2.5 Audio Description (Prerecorded)": {
+      "impact": "L",
+      "criteriaText": "1.2.5 Audio Description (Prerecorded): Audio description is provided for all prerecorded video content in synchronized media.",
+      "criteriaShorthand": "1.2.5 Audio Description (Prerecorded)",
+      "criteriaNumber": "1.2.5",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities (autism)",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Media",
+        "Braille reader"
+      ],
+      "related": [
+        "1.2.3"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.3.1 Info and Relationships": {
+      "impact": "H",
+      "criteriaText": "1.3.1 Info and Relationships: Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.",
+      "criteriaShorthand": "1.3.1 Info and Relationships",
+      "criteriaNumber": "1.3.1",
+      "disability": [
+        "Blindness",
+        "Deaf-Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Braille reader",
+        "Keyboard"
+      ],
+      "related": [
+        "4.1.2",
+        "502.3.1",
+        "502.3.3",
+        "502.3.6"
+      ],
+      "confusedWith": [
+        "4.1.2",
+        "502.3.6"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.3.2 Meaningful Sequence": {
+      "impact": "M",
+      "criteriaText": "1.3.2 Meaningful Sequence: When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.",
+      "criteriaShorthand": "1.3.2 Meaningful Sequence",
+      "criteriaNumber": "1.3.2",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities (dyslexia)",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Color contrast",
+        "Keyboard",
+        "Magnifier"
+      ],
+      "related": [],
+      "confusedWith": [
+        "2.4.3"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.3.3 Sensory Characteristics": {
+      "impact": "L",
+      "criteriaText": "1.3.3 Sensory Characteristics: Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.",
+      "criteriaShorthand": "1.3.3 Sensory Characteristics",
+      "criteriaNumber": "1.3.3",
+      "disability": [
+        "Blindness",
+        "Deafness",
+        "Low Vision",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Magnifier"
+      ],
+      "related": [
+        "1.4.1"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.3.4 Orientation": {
+      "impact": "L",
+      "criteriaText": "1.3.4 Orientation: Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.\r\n\r\nNOTE\r\nExamples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable.",
+      "criteriaShorthand": "1.3.4 Orientation",
+      "criteriaNumber": "1.3.4",
+      "disability": [
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Mobile"
+      ],
+      "related": [
+        "2.5.4"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.3.5 Identify Input Purpose": {
+      "impact": "L",
+      "criteriaText": "1.3.5 Identify Input Purpose: The purpose of each input field collecting information about the user can be programmatically determined when:\r\n\r\nThe input field serves a purpose identified in the Input Purposes for User Interface Components section; and\r\nThe content is implemented using technologies with support for identifying the expected meaning for form input data.",
+      "criteriaShorthand": "1.3.5 Identify Input Purpose",
+      "criteriaNumber": "1.3.5",
+      "disability": [
+        "Cognitive Disabilities (dementia",
+        "language",
+        "memory)",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen Reader"
+      ],
+      "related": [
+        "1.3.1"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.1 Use of Color": {
+      "impact": "M",
+      "criteriaText": "1.4.1 Use of Color: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)\r\n\r\nNote: This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding.",
+      "criteriaShorthand": "1.4.1 Use of Color",
+      "criteriaNumber": "1.4.1",
+      "disability": [
+        "Blindness",
+        "Color Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Color Contrast"
+      ],
+      "related": [
+        "1.3.3"
+      ],
+      "confusedWith": [
+        "1.3.3",
+        "1.4.3"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.10 Reflow": {
+      "impact": "M",
+      "criteriaText": "1.4.10 Reflow: Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:\r\n\r\nVertical scrolling content at a width equivalent to 320 CSS pixels;\r\nHorizontal scrolling content at a height equivalent to 256 CSS pixels.\r\nExcept for parts of the content which require two-dimensional layout for usage or meaning.\r\n\r\nNOTE\r\nNote: 320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which are designed to scroll horizontally (e.g. with vertical text), the 256 CSS pixels is equivalent to a starting viewport height of 1024px at 400% zoom.\r\n\r\nNOTE\r\nExamples of content which require two-dimensional layout are images, maps, diagrams, video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while manipulating content.",
+      "criteriaShorthand": "1.4.10 Reflow",
+      "criteriaNumber": "1.4.10",
+      "disability": [
+        "Cognitive Disabilities (dyslexia)",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Mobile"
+      ],
+      "related": [
+        "1.4.4"
+      ],
+      "confusedWith": [
+        "1.4.4"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.11 Non-Text Contrast": {
+      "impact": "M",
+      "criteriaText": "1.4.11 Non-Text Contrast: The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):\r\n\r\nUser Interface Components\r\nVisual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;\r\nGraphical Objects\r\nParts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.",
+      "criteriaShorthand": "1.4.11 Non-Text Contrast",
+      "criteriaNumber": "1.4.11",
+      "disability": [
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Magnifier"
+      ],
+      "related": [
+        "1.4.3"
+      ],
+      "confusedWith": [
+        "1.4.3"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.12 Text Spacing": {
+      "impact": "L",
+      "criteriaText": "1.4.12 Text Spacing: In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property:\r\n\r\nLine height (line spacing) to at least 1.5 times the font size;\r\nSpacing following paragraphs to at least 2 times the font size;\r\nLetter spacing (tracking) to at least 0.12 times the font size;\r\nWord spacing to at least 0.16 times the font size.\r\nException: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.",
+      "criteriaShorthand": "1.4.12 Text Spacing",
+      "criteriaNumber": "1.4.12",
+      "disability": [
+        "Cognitive Disabilities (dyslexia)",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Mobile"
+      ],
+      "related": [
+        "1.4.4"
+      ],
+      "confusedWith": [
+        "1.4.4",
+        "1.4.10"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.13 Content on Hover or Focus": {
+      "impact": "L",
+      "criteriaText": "1.4.13 Content on Hover or Focus: Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:\r\n\r\nDismissable\r\nA mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;\r\nHoverable\r\nIf pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;\r\nPersistent\r\nThe additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.\r\nException: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.\r\n\r\nNOTE\r\nExamples of additional content controlled by the user agent include browser tooltips created through use of the HTML title attribute.\r\n\r\nNOTE\r\nCustom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.",
+      "criteriaShorthand": "1.4.13 Content on Hover or Focus",
+      "criteriaNumber": "1.4.13",
+      "disability": [
+        "Cognitive Disabilities (ADHD)",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Keyboard"
+      ],
+      "related": [],
+      "confusedWith": [
+        "2.1.1",
+        "3.2.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.2 Audio Control": {
+      "impact": "H",
+      "criteriaText": "1.4.2 Audio Control: If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level. (Level A)\r\n\r\nNote: Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion.",
+      "criteriaShorthand": "1.4.2 Audio Control",
+      "criteriaNumber": "1.4.2",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities"
+      ],
+      "endUserTool": [
+        "Media"
+      ],
+      "related": [
+        "2.2.2"
+      ],
+      "confusedWith": [
+        "1.2.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.3 Contrast (Minimum)": {
+      "impact": "M",
+      "criteriaText": "1.4.3 Contrast (Minimum): The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: (Level AA)\r\n\r\nLarge Text: Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;\r\n\r\nIncidental: Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.\r\n\r\nLogotypes: Text that is part of a logo or brand name has no minimum contrast requirement.",
+      "criteriaShorthand": "1.4.3 Contrast (Minimum)",
+      "criteriaNumber": "1.4.3",
+      "disability": [
+        "Cognitive Disabilities (dyslexia)",
+        "Color Blindness",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Magnifier"
+      ],
+      "related": [
+        "1.4.11"
+      ],
+      "confusedWith": [
+        "1.4.11"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.4 Resize text": {
+      "impact": "H",
+      "criteriaText": "1.4.4 Resize text: Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.",
+      "criteriaShorthand": "1.4.4 Resize text",
+      "criteriaNumber": "1.4.4",
+      "disability": [
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Magnifier"
+      ],
+      "related": [
+        "1.4.10",
+        "1.4.12"
+      ],
+      "confusedWith": [
+        "1.4.10",
+        "1.4.12"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "1.4.5 Images of Text": {
+      "impact": "L",
+      "criteriaText": "1.4.5 Images of Text: If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following: (Level AA)\r\n\r\nCustomizable: The image of text can be visually customized to the user's requirements;\r\n\r\nEssential: A particular presentation of text is essential to the information being conveyed.",
+      "criteriaShorthand": "1.4.5 Images of Text",
+      "criteriaNumber": "1.4.5",
+      "disability": [
+        "Blindness",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Magnifier"
+      ],
+      "related": [
+        "1.1.1",
+        "1.4.3"
+      ],
+      "confusedWith": [
+        "1.1.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.1.1 Keyboard": {
+      "impact": "H",
+      "criteriaText": "2.1.1 Keyboard: All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A)\r\n\r\nNote 1: This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique handwriting) requires path-dependent input but the underlying function (text input) does not.\r\n\r\nNote 2: This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.",
+      "criteriaShorthand": "2.1.1 Keyboard",
+      "criteriaNumber": "2.1.1",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Keyboard"
+      ],
+      "related": [
+        "2.1.2"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.1.2 No Keyboard Trap": {
+      "impact": "H",
+      "criteriaText": "2.1.2 No Keyboard Trap: If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away. (Level A)\r\n\r\nNote: Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion.",
+      "criteriaShorthand": "2.1.2 No Keyboard Trap",
+      "criteriaNumber": "2.1.2",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Keyboard"
+      ],
+      "related": [
+        "2.1.1"
+      ],
+      "confusedWith": [
+        "2.1.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.1.4 Character Key Shortcuts": {
+      "impact": "H",
+      "criteriaText": "2.1.4 Character Key Shortcuts: If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:\r\n\r\nTurn off\r\nA mechanism is available to turn the shortcut off;\r\nRemap\r\nA mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);\r\nActive only on focus\r\nThe keyboard shortcut for a user interface component is only active when that component has focus.",
+      "criteriaShorthand": "2.1.4 Character Key Shortcuts",
+      "criteriaNumber": "2.1.4",
+      "disability": [
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Speech input"
+      ],
+      "related": [
+        "2.1.1"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.2.1 Timing Adjustable": {
+      "impact": "M",
+      "criteriaText": "2.2.1 Timing Adjustable: For each time limit that is set by the content, at least one of the following is true: (Level A)\r\n\r\nTurn off: The user is allowed to turn off the time limit before encountering it; or\r\n\r\nAdjust: The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or\r\n\r\nExtend: The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, \"press the space bar\"), and the user is allowed to extend the time limit at least ten times; or\r\n\r\nReal-time Exception: The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or\r\n\r\nEssential Exception: The time limit is essential and extending it would invalidate the activity; or\r\n\r\n20 Hour Exception: The time limit is longer than 20 hours.",
+      "criteriaShorthand": "2.2.1 Timing Adjustable",
+      "criteriaNumber": "2.2.1",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Keyboard"
+      ],
+      "related": [
+        "2.2.2"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.2.2 Pause, Stop, Hide": {
+      "impact": "H",
+      "criteriaText": "2.2.2 Pause, Stop, Hide: For moving, blinking, scrolling, or auto-updating information, all of the following are true: (Level A)\r\n\r\nMoving, blinking, scrolling: For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and\r\n\r\nAuto-updating: For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.",
+      "criteriaShorthand": "2.2.2 Pause, Stop, Hide",
+      "criteriaNumber": "2.2.2",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Keyboard"
+      ],
+      "related": [
+        "1.4.2"
+      ],
+      "confusedWith": [
+        "1.4.2"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.3.1 Three Flashes or Below Threshold": {
+      "impact": "H",
+      "criteriaText": "2.3.1 Three Flashes or Below Threshold: Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds. (Level A)\r\n\r\nNote: Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion.",
+      "criteriaShorthand": "2.3.1 Three Flashes or Below Threshold",
+      "criteriaNumber": "2.3.1",
+      "disability": [
+        "Cognitive Disabilities (epilepsy",
+        "migraines)"
+      ],
+      "endUserTool": [],
+      "related": [
+        "2.2.2"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.4.1 Bypass Blocks": {
+      "impact": "L",
+      "criteriaText": "2.4.1 Bypass Blocks: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.",
+      "criteriaShorthand": "2.4.1 Bypass Blocks",
+      "criteriaNumber": "2.4.1",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Keyboard"
+      ],
+      "related": [
+        "2.1.1"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.4.2 Page Titled": {
+      "impact": "L",
+      "criteriaText": "2.4.2 Page Titled: Web pages have titles that describe topic or purpose.",
+      "criteriaShorthand": "2.4.2 Page Titled",
+      "criteriaNumber": "2.4.2",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen Reader"
+      ],
+      "related": [
+        "1.3.1",
+        "2.4.6"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.4.3 Focus Order": {
+      "impact": "M",
+      "criteriaText": "2.4.3 Focus Order: If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.",
+      "criteriaShorthand": "2.4.3 Focus Order",
+      "criteriaNumber": "2.4.3",
+      "disability": [
+        "Cognitive Disabilities",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Keyboard"
+      ],
+      "related": [
+        "2.1.1",
+        "2.4.7"
+      ],
+      "confusedWith": [
+        "2.4.7",
+        "1.3.2"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.4.4 Link Purpose (In Context)": {
+      "impact": "M",
+      "criteriaText": "2.4.4 Link Purpose (In Context): The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.",
+      "criteriaShorthand": "2.4.4 Link Purpose (In Context)",
+      "criteriaNumber": "2.4.4",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities"
+      ],
+      "endUserTool": [
+        "Screen Reader"
+      ],
+      "related": [
+        "2.4.6"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.4.5 Multiple Ways": {
+      "impact": "L",
+      "criteriaText": "2.4.5 Multiple Ways: More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.",
+      "criteriaShorthand": "2.4.5 Multiple Ways",
+      "criteriaNumber": "2.4.5",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Keyboard"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.4.6 Headings and Labels": {
+      "impact": "H",
+      "criteriaText": "2.4.6 Headings and Labels: Headings and labels describe topic or purpose.",
+      "criteriaShorthand": "2.4.6 Headings and Labels",
+      "criteriaNumber": "2.4.6",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen Reader"
+      ],
+      "related": [
+        "1.3.1",
+        "2.4.4",
+        "4.1.2"
+      ],
+      "confusedWith": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.4.7 Focus Visible": {
+      "impact": "H",
+      "criteriaText": "2.4.7 Focus Visible: Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.",
+      "criteriaShorthand": "2.4.7 Focus Visible",
+      "criteriaNumber": "2.4.7",
+      "disability": [
+        "Cognitive Disabilities (ADHD",
+        "memory)",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Keyboard"
+      ],
+      "related": [
+        "2.1.1",
+        "2.4.3"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.5.1 Pointer Gestures": {
+      "impact": "M",
+      "criteriaText": "2.5.1 Pointer Gestures: All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.\r\n\r\nNOTE\r\nThis requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).",
+      "criteriaShorthand": "2.5.1 Pointer Gestures",
+      "criteriaNumber": "2.5.1",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Mobile"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.5.2 Pointer Cancellation": {
+      "impact": "M",
+      "criteriaText": "2.5.2 Pointer Cancellation: For functionality that can be operated using a single pointer, at least one of the following is true:\r\n\r\nNo Down-Event\r\nThe down-event of the pointer is not used to execute any part of the function;\r\nAbort or Undo\r\nCompletion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;\r\nUp Reversal\r\nThe up-event reverses any outcome of the preceding down-event;\r\nEssential\r\nCompleting the function on the down-event is essential.\r\nNOTE\r\nFunctions that emulate a keyboard or numeric keypad key press are considered essential.\r\n\r\nNOTE\r\nThis requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).",
+      "criteriaShorthand": "2.5.2 Pointer Cancellation",
+      "criteriaNumber": "2.5.2",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Mobile"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.5.3 Label in Name": {
+      "impact": "M",
+      "criteriaText": "2.5.3 Label in Name: For user interface components with labels that include text or images of text, the name contains the text that is presented visually.\r\n\r\nNOTE\r\nA best practice is to have the text of the label at the start of the name.",
+      "criteriaShorthand": "2.5.3 Label in Name",
+      "criteriaNumber": "2.5.3",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen Reader",
+        "Speech input"
+      ],
+      "related": [
+        "4.1.2"
+      ],
+      "confusedWith": [
+        "4.1.2"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "2.5.4 Motion Actuation": {
+      "impact": "L",
+      "criteriaText": "2.5.4 Motion Actuation: Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:\r\n\r\nSupported Interface\r\nThe motion is used to operate functionality through an accessibility supported interface;\r\nEssential\r\nThe motion is essential for the function and doing so would invalidate the activity.",
+      "criteriaShorthand": "2.5.4 Motion Actuation",
+      "criteriaNumber": "2.5.4",
+      "disability": [
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Mobile"
+      ],
+      "related": [
+        "1.3.4"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.1.1 Language of Page": {
+      "impact": "H",
+      "criteriaText": "3.1.1 Language of Page: The default human language of each Web page can be programmatically determined.",
+      "criteriaShorthand": "3.1.1 Language of Page",
+      "criteriaNumber": "3.1.1",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen Reader"
+      ],
+      "related": [
+        "3.1.2"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.1.2 Language of Parts": {
+      "impact": "L",
+      "criteriaText": "3.1.2 Language of Parts: The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.",
+      "criteriaShorthand": "3.1.2 Language of Parts",
+      "criteriaNumber": "3.1.2",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "3.1.1"
+      ],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.2.1 On Focus": {
+      "impact": "H",
+      "criteriaText": "3.2.1 On Focus: When any component receives focus, it does not initiate a change of context.",
+      "criteriaShorthand": "3.2.1 On Focus",
+      "criteriaNumber": "3.2.1",
+      "disability": [
+        "Cognitive Disabilities",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Keyboard"
+      ],
+      "related": [
+        "2.1.1",
+        "3.2.2"
+      ],
+      "confusedWith": [
+        "3.2.2"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.2.2 On Input": {
+      "impact": "H",
+      "criteriaText": "3.2.2 On Input: Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.",
+      "criteriaShorthand": "3.2.2 On Input",
+      "criteriaNumber": "3.2.2",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "3.2.1"
+      ],
+      "confusedWith": [
+        "3.2.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.2.3 Consistent Navigation": {
+      "impact": "M",
+      "criteriaText": "3.2.3 Consistent Navigation: Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
+      "criteriaShorthand": "3.2.3 Consistent Navigation",
+      "criteriaNumber": "3.2.3",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Keyboard",
+        "Magnifier"
+      ],
+      "related": [
+        "2.1.1",
+        "3.2.4"
+      ],
+      "confusedWith": [
+        "2.1.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.2.4 Consistent Identification": {
+      "impact": "L",
+      "criteriaText": "3.2.4 Consistent Identification: Components that have the same functionality within a set of Web pages are identified consistently.",
+      "criteriaShorthand": "3.2.4 Consistent Identification",
+      "criteriaNumber": "3.2.4",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "3.2.3"
+      ],
+      "confusedWith": [
+        "1.1.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.3.1 Error Identification": {
+      "impact": "M",
+      "criteriaText": "3.3.1 Error Identification: If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
+      "criteriaShorthand": "3.3.1 Error Identification",
+      "criteriaNumber": "3.3.1",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Magnifier"
+      ],
+      "related": [
+        "1.3.1",
+        "1.3.3",
+        "1.4.1",
+        "3.3.2",
+        "3.3.3",
+        "3.3.4"
+      ],
+      "confusedWith": [
+        "3.3.3"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.3.2 Labels or Instructions": {
+      "impact": "M",
+      "criteriaText": "3.3.2 Labels or Instructions: Labels or instructions are provided when content requires user input.",
+      "criteriaShorthand": "3.3.2 Labels or Instructions",
+      "criteriaNumber": "3.3.2",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Magnifier"
+      ],
+      "related": [
+        "1.3.1",
+        "1.3.3",
+        "1.4.1",
+        "3.3.1",
+        "3.3.3",
+        "3.3.4"
+      ],
+      "confusedWith": [
+        "2.4.6",
+        "502.3.6",
+        "502.3.10"
+      ],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.3.3 Error Suggestion": {
+      "impact": "M",
+      "criteriaText": "3.3.3 Error Suggestion: If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. ",
+      "criteriaShorthand": "3.3.3 Error Suggestion",
+      "criteriaNumber": "3.3.3",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Magnifier"
+      ],
+      "related": [
+        "1.3.1",
+        "1.3.3",
+        "1.4.1",
+        "3.3.2",
+        "3.3.3",
+        "3.3.4"
+      ],
+      "confusedWith": [
+        "3.3.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "3.3.4 Error Prevention (Legal, Financial, Data)": {
+      "impact": "L",
+      "criteriaText": "3.3.4 Error Prevention (Legal, Financial, Data): For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: (Level AA)\r\n\r\nReversible: Submissions are reversible.\r\n\r\nChecked: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.\r\n\r\nConfirmed: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.",
+      "criteriaShorthand": "3.3.4 Error Prevention (Legal, Financial, Data)",
+      "criteriaNumber": "3.3.4",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "1.3.1",
+        "3.3.1",
+        "3.3.2",
+        "3.3.3"
+      ],
+      "confusedWith": [
+        "3.3.1"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "302.1 Without Vision": {
+      "impact": "H",
+      "criteriaText": "302.1 Without Vision. Where a visual mode of operation is provided, ICT shall provide at least one mode of operation that does not require user vision.",
+      "criteriaShorthand": "302.1 Without Vision",
+      "criteriaNumber": 302.1,
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Braille",
+        "Screen reader",
+        "Speech input"
+      ],
+      "related": [
+        "302.2",
+        "302.3",
+        "302.7",
+        "302.8",
+        "302.9"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.2 With Limited Vision": {
+      "impact": "H",
+      "criteriaText": "302.2 With Limited Vision. Where a visual mode of operation is provided, ICT shall provide at least one mode of operation that enables users to make use of limited vision.",
+      "criteriaShorthand": "302.2 With Limited Vision",
+      "criteriaNumber": 302.2,
+      "disability": [
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Magnifier",
+        "Screen Reader"
+      ],
+      "related": [
+        "302.1",
+        "302.3"
+      ],
+      "confusedWith": [
+        "302.1"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.3 Without Perception of Color": {
+      "impact": "H",
+      "criteriaText": "302.3 Without Perception of Color. Where a visual mode of operation is provided, ICT shall provide at least one visual mode of operation that does not require user perception of color.",
+      "criteriaShorthand": "302.3 Without Perception of Color",
+      "criteriaNumber": 302.3,
+      "disability": [
+        "Color Blindness"
+      ],
+      "endUserTool": [],
+      "related": [
+        "1.4.1"
+      ],
+      "confusedWith": [
+        "302.2",
+        "1.4.3",
+        "1.4.11"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.4 Without Hearing": {
+      "impact": "H",
+      "criteriaText": "302.4 Without Hearing. Where an audible mode of operation is provided, ICT shall provide at least one mode of operation that does not require user hearing.",
+      "criteriaShorthand": "302.4 Without Hearing",
+      "criteriaNumber": 302.4,
+      "disability": [
+        "Deaf"
+      ],
+      "endUserTool": [
+        "Braille",
+        "Video Player"
+      ],
+      "related": [
+        "302.5"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.5 With Limited Hearing": {
+      "impact": "H",
+      "criteriaText": "302.5 With Limited Hearing. Where an audible mode of operation is provided, ICT shall provide at least one mode of operation that enables users to make use of limited hearing.",
+      "criteriaShorthand": "302.5 With Limited Hearing",
+      "criteriaNumber": 302.5,
+      "disability": [
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Video player"
+      ],
+      "related": [
+        "302.4"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.6 Without Speech": {
+      "impact": "H",
+      "criteriaText": "302.6 Without Speech. Where speech is used for input, control, or operation, ICT shall provide at least one mode of operation that does not require user speech.",
+      "criteriaShorthand": "302.6 Without Speech",
+      "criteriaNumber": 302.6,
+      "disability": [
+        "Speech Disabilities"
+      ],
+      "endUserTool": [
+        "Keyboard"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.7 With Limited Manipulation": {
+      "impact": "H",
+      "criteriaText": "302.7 With Limited Manipulation. Where a manual mode of operation is provided, ICT shall provide at least one mode of operation that does not require fine motor control or simultaneous manual operations.",
+      "criteriaShorthand": "302.7 With Limited Manipulation",
+      "criteriaNumber": 302.7,
+      "disability": [
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Keyboard",
+        "Speech input"
+      ],
+      "related": [
+        "302.8"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.8 With Limited Reach and Strength": {
+      "impact": "H",
+      "criteriaText": "302.8 With Limited Reach and Strength. Where a manual mode of operation is provided, ICT shall provide at least one mode of operation that is operable with limited reach and limited strength.",
+      "criteriaShorthand": "302.8 With Limited Reach and Strength",
+      "criteriaNumber": 302.8,
+      "disability": [
+        "Limited Mobility"
+      ],
+      "endUserTool": [],
+      "related": [
+        "302.7"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "302.9 With Limited Language, Cognitive, and Learning Abilities": {
+      "impact": "H",
+      "criteriaText": "302.9 With Limited Language, Cognitive, and Learning Abilities. ICT shall provide features making its use by individuals with limited cognitive, language, and learning abilities simpler and easier.",
+      "criteriaShorthand": "302.9 With Limited Language, Cognitive, and Learning Abilities",
+      "criteriaNumber": 302.9,
+      "disability": [
+        "Cognitive"
+      ],
+      "endUserTool": [
+        "Keyboard",
+        "Screen reader",
+        "Video player"
+      ],
+      "related": [
+        "302.1",
+        "302.7",
+        "302.8"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "4.1.1 Parsing": {
+      "impact": "L",
+      "criteriaText": "4.1.1 Parsing: In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features. \r\n\r\nNOTE\r\nStart and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete",
+      "criteriaShorthand": "4.1.1 Parsing",
+      "criteriaNumber": "4.1.1",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "4.1.2 Name, Role, Value": {
+      "impact": "H",
+      "criteriaText": "4.1.2 Name, Role, Value: For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.\r\n\r\nNOTE\r\nThis success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.",
+      "criteriaShorthand": "4.1.2 Name, Role, Value",
+      "criteriaNumber": "4.1.2",
+      "disability": [
+        "Blindness",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input",
+        "Magnifier"
+      ],
+      "related": [
+        "1.3.1",
+        "502.3.1",
+        "502.3.2"
+      ],
+      "confusedWith": [
+        "1.3.1",
+        "2.4.6"
+      ],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.0\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "4.1.3 Status Messages": {
+      "impact": "M",
+      "criteriaText": "4.1.3 Status Messages: In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.",
+      "criteriaShorthand": "4.1.3 Status Messages",
+      "criteriaNumber": "4.1.3",
+      "disability": [
+        "Blindness",
+        "Cognitive Disabilities",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "502.3.14"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "WCAG",
+      "primaryStandard": "WCAG 2.1\r\nhttps://www.w3.org/TR/WCAG21/"
+    },
+    "4.2.11 Privacy": {
+      "impact": "M",
+      "criteriaText": "4.2.11 Privacy Where ICT provides features that are provided for accessibility, some users will need their privacy to be maintained when using those ICT features that are provided for accessibility.",
+      "criteriaShorthand": "4.2.11 Privacy",
+      "criteriaNumber": "4.2.11",
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "EN 301 549",
+      "primaryStandard": "EN 301 549\r\nhttps://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf"
+    },
+    "502.2.1 User Control of Accessibility Features": {
+      "impact": "M",
+      "criteriaText": "502.2.1 User Control of Accessibility Features. Platform software shall provide user control over platform features that are defined in the platform documentation as accessibility features.",
+      "criteriaShorthand": "502.2.1 User Control of Accessibility Features",
+      "criteriaNumber": "502.2.1",
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [
+        "502.2.2"
+      ],
+      "confusedWith": [
+        "502.2.2"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.2.2 No Disruption of Accessibility Features": {
+      "impact": "H",
+      "criteriaText": "502.2.2 No Disruption of Accessibility Features. Software shall not disrupt platform features that are defined in the platform documentation as accessibility features.",
+      "criteriaShorthand": "502.2.2 No Disruption of Accessibility Features",
+      "criteriaNumber": "502.2.2",
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [
+        "502.2.1"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.1 Object Information": {
+      "impact": "H",
+      "criteriaText": "502.3.1 Object Information. The object role, state(s), properties, boundary, name, and description shall be programmatically determinable.",
+      "criteriaShorthand": "502.3.1 Object Information",
+      "criteriaNumber": "502.3.1",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.10 List of Actions": {
+      "impact": "M",
+      "criteriaText": "502.3.10 List of Actions. A list of all actions that can be executed on an object shall be programmatically determinable.",
+      "criteriaShorthand": "502.3.10 List of Actions",
+      "criteriaNumber": "502.3.10",
+      "disability": [
+        "Blindness",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input",
+        "Magnifier"
+      ],
+      "related": [
+        "502.3.11"
+      ],
+      "confusedWith": [
+        "502.3.11",
+        "3.3.2"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.11 Actions on Objects": {
+      "impact": "H",
+      "criteriaText": "502.3.11 Actions on Objects. Applications shall allow assistive technology to programmatically execute available actions on objects.",
+      "criteriaShorthand": "502.3.11 Actions on Objects",
+      "criteriaNumber": "502.3.11",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input"
+      ],
+      "related": [
+        "502.3.10"
+      ],
+      "confusedWith": [
+        "502.3.10",
+        "3.3.2"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.12 Focus Cursor": {
+      "impact": "L",
+      "criteriaText": "502.3.12 Focus Cursor. Applications shall expose information and mechanisms necessary to track focus, text insertion point, and selection attributes of user interface components.",
+      "criteriaShorthand": "502.3.12 Focus Cursor",
+      "criteriaNumber": "502.3.12",
+      "disability": [
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Magnifier"
+      ],
+      "related": [
+        "502.3.1"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.13 Modification of Focus Cursor": {
+      "impact": "M",
+      "criteriaText": "502.3.13 Modification of Focus Cursor. Focus, text insertion point, and selection attributes that can be set by the user shall be capable of being set programmatically, including through the use of assistive technology.",
+      "criteriaShorthand": "502.3.13 Modification of Focus Cursor",
+      "criteriaNumber": "502.3.13",
+      "disability": [
+        "Blindness",
+        "Limited Mobility",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input",
+        "Magnifier"
+      ],
+      "related": [
+        "502.3.2"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.14 Event Notification": {
+      "impact": "H",
+      "criteriaText": "502.3.14 Event Notification. Notification of events relevant to user interactions, including but not limited to, changes in the component’s state(s), value, name, description, or boundary, shall be available to assistive technology.",
+      "criteriaShorthand": "502.3.14 Event Notification",
+      "criteriaNumber": "502.3.14",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "4.1.3"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.2 Modification of Object Information": {
+      "impact": "M",
+      "criteriaText": "502.3.2 Modification of Object Information. States and properties that can be set by the user shall be capable of being set programmatically, including through assistive technology.",
+      "criteriaShorthand": "502.3.2 Modification of Object Information",
+      "criteriaNumber": "502.3.2",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input"
+      ],
+      "related": [
+        "502.3.1"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.3 Row, Column, and Headers": {
+      "impact": "H",
+      "criteriaText": "502.3.3 Row, Column, and Headers. If an object is in a data table, the occupied rows and columns, and any headers associated with those rows or columns, shall be programmatically determinable.",
+      "criteriaShorthand": "502.3.3 Row, Column, and Headers",
+      "criteriaNumber": "502.3.3",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "1.3.1",
+        "1.3.2"
+      ],
+      "confusedWith": [
+        "1.3.1"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.4 Values": {
+      "impact": "M",
+      "criteriaText": "502.3.4 Values. Any current value(s), and any set or range of allowable values associated with an object, shall be programmatically determinable.",
+      "criteriaShorthand": "502.3.4 Values",
+      "criteriaNumber": "502.3.4",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "confusedWith": [
+        "502.3.8"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.5 Modification of Values": {
+      "impact": "M",
+      "criteriaText": "502.3.5 Modification of Values. Values that can be set by the user shall be capable of being set programmatically, including through assistive technology.",
+      "criteriaShorthand": "502.3.5 Modification of Values",
+      "criteriaNumber": "502.3.5",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input"
+      ],
+      "related": [
+        "1.3.1",
+        "4.1.2"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.6 Label Relationships": {
+      "impact": "M",
+      "criteriaText": "502.3.6 Label Relationships. Any relationship that a component has as a label for another component, or of being labeled by another component, shall be programmatically determinable.",
+      "criteriaShorthand": "502.3.6 Label Relationships",
+      "criteriaNumber": "502.3.6",
+      "disability": [
+        "Blindness",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Magnifier"
+      ],
+      "related": [
+        "1.3.1",
+        "502.3.7"
+      ],
+      "confusedWith": [
+        "2.4.6"
+      ],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.7 Hierarchical Relationships": {
+      "impact": "M",
+      "criteriaText": "502.3.7 Hierarchical Relationships. Any hierarchical (parent-child) relationship that a component has as a container for, or being contained by, another component shall be programmatically determinable.",
+      "criteriaShorthand": "502.3.7 Hierarchical Relationships",
+      "criteriaNumber": "502.3.7",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "1.3.1",
+        "502.3.6"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.8 Text": {
+      "impact": "H",
+      "criteriaText": "502.3.8 Text. The content of text objects, text attributes, and the boundary of text rendered to the screen, shall be programmatically determinable.",
+      "criteriaShorthand": "502.3.8 Text",
+      "criteriaNumber": "502.3.8",
+      "disability": [
+        "Blindness"
+      ],
+      "endUserTool": [
+        "Screen reader"
+      ],
+      "related": [
+        "1.3.1",
+        "2.4.2",
+        "3.1.1",
+        "3.1.2"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.3.9 Modification of Text": {
+      "impact": "M",
+      "criteriaText": "502.3.9 Modification of Text. Text that can be set by the user shall be capable of being set programmatically, including through assistive technology.",
+      "criteriaShorthand": "502.3.9 Modification of Text",
+      "criteriaNumber": "502.3.9",
+      "disability": [
+        "Blindness",
+        "Limited Mobility"
+      ],
+      "endUserTool": [
+        "Screen reader",
+        "Speech input"
+      ],
+      "related": [
+        "502.3.8"
+      ],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "502.4 Platform Accessibility Features": {
+      "impact": "L",
+      "criteriaText": "502.4 Platforms and platform software shall conform to the requirements in ANSI/HFES 200.2, Human Factors Engineering of Software User Interfaces — Part 2: Accessibility (2008) (incorporated by reference, see 702.4.1) listed below:\r\nA. Section 9.3.3 Enable sequential entry of multiple (chorded) keystrokes;\r\nB. Section 9.3.4 Provide adjustment of delay before key acceptance;\r\nC. Section 9.3.5 Provide adjustment of same-key double-strike acceptance;\r\nD. Section 10.6.7 Allow users to choose visual alternative for audio output;\r\nE. Section 10.6.8 Synchronize audio equivalents for visual events;\r\nF. Section 10.6.9 Provide speech output services; and\r\nG. Section 10.7.1 Display any captions provided.",
+      "criteriaShorthand": "502.4 Platform Accessibility Features",
+      "criteriaNumber": 502.4,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "503.2 User Preferences": {
+      "impact": "H",
+      "criteriaText": "503.2 User Preferences. Applications shall permit user preferences from platform settings for color, contrast, font type, font size, and focus cursor.\r\n\r\nEXCEPTION: Applications that are designed to be isolated from their underlying platform software, including Web applications, shall not be required to conform to 503.2.",
+      "criteriaShorthand": "503.2 User Preferences",
+      "criteriaNumber": 503.2,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "503.3 Alternative User Interfaces": {
+      "impact": "L",
+      "criteriaText": "503.3 Alternative User Interfaces. Where an application provides an alternative user interface that functions as assistive technology, the application shall use platform and other industry standard accessibility services.",
+      "criteriaShorthand": "503.3 Alternative User Interfaces",
+      "criteriaNumber": 503.3,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "503.4.1 Caption Controls": {
+      "impact": "L",
+      "criteriaText": "503.4.1 Caption Controls. Where user controls are provided for volume adjustment, ICT shall provide user controls for the selection of captions at the same menu level as the user controls for volume or program selection.",
+      "criteriaShorthand": "503.4.1 Caption Controls",
+      "criteriaNumber": "503.4.1",
+      "disability": [
+        "Deafness",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Video player"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "503.4.2 Audio Description Controls": {
+      "impact": "L",
+      "criteriaText": "503.4.2 Audio Description Controls. Where user controls are provided for program selection, ICT shall provide user controls for the selection of audio descriptions at the same menu level as the user controls for volume or program selection.",
+      "criteriaShorthand": "503.4.2 Audio Description Controls",
+      "criteriaNumber": "503.4.2",
+      "disability": [
+        "Blindness",
+        "Deaf-Blindness",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Video player"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "504.2 Content Creation or Editing (if not authoring tool, enter “not applicable”)": {
+      "impact": "L",
+      "criteriaText": "504.2 Content Creation or Editing (if not authoring tool, enter “not applicable”)",
+      "criteriaShorthand": "504.2 Content Creation or Editing (if not authoring tool, enter “not applicable”)",
+      "criteriaNumber": 504.2,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "504.2.1 Preservation of Information Provided for Accessibility in Format Conversion": {
+      "impact": "L",
+      "criteriaText": "504.2.1 Preservation of Information Provided for Accessibility in Format Conversion",
+      "criteriaShorthand": "504.2.1 Preservation of Information Provided for Accessibility in Format Conversion",
+      "criteriaNumber": "504.2.1",
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "504.2.2 PDF Export": {
+      "impact": "L",
+      "criteriaText": "504.2.2 PDF Export",
+      "criteriaShorthand": "504.2.2 PDF Export",
+      "criteriaNumber": "504.2.2",
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "504.3 Prompts": {
+      "impact": "L",
+      "criteriaText": "504.3 Prompts",
+      "criteriaShorthand": "504.3 Prompts",
+      "criteriaNumber": 504.3,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "504.4 Templates": {
+      "impact": "L",
+      "criteriaText": "504.4 Templates",
+      "criteriaShorthand": "504.4 Templates",
+      "criteriaNumber": 504.4,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "602.2 Accessibility and Compatibility Features": {
+      "impact": "L",
+      "criteriaText": "602.2 Accessibility and Compatibility Features. Documentation shall list and explain how to use the accessibility and compatibility features required by Chapters 4 and 5. Documentation shall include accessibility features that are built-in and accessibility features that provide compatibility with assistive technology.",
+      "criteriaShorthand": "602.2 Accessibility and Compatibility Features",
+      "criteriaNumber": 602.2,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "602.3 Electronic Support Documentation": {
+      "impact": "L",
+      "criteriaText": "602.3 Electronic Support Documentation. Documentation in electronic format, including Web-based self-service support, shall conform to Level A and Level AA Success Criteria and Conformance Requirements in WCAG 2.0 (incorporated by reference, see 702.10.1).",
+      "criteriaShorthand": "602.3 Electronic Support Documentation",
+      "criteriaNumber": 602.3,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "602.4 Alternate Formats for Non-Electronic Support Documentation": {
+      "impact": "L",
+      "criteriaText": "602.4 Alternate Formats for Non-Electronic Support Documentation. Where support documentation is only provided in non-electronic formats, alternate formats usable by individuals with disabilities shall be provided upon request.",
+      "criteriaShorthand": "602.4 Alternate Formats for Non-Electronic Support Documentation",
+      "criteriaNumber": 602.4,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "603.2 Information on Accessibility and Compatibility Features": {
+      "impact": "L",
+      "criteriaText": "603.2 Information on Accessibility and Compatibility Features. ICT support services shall include information on the accessibility and compatibility features required by 602.2.",
+      "criteriaShorthand": "603.2 Information on Accessibility and Compatibility Features",
+      "criteriaNumber": 603.2,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "603.3 Accommodation of Communication Needs": {
+      "impact": "M",
+      "criteriaText": "603.3 Accommodation of Communication Needs. Support services shall be provided directly to the user or through a referral to a point of contact. Such ICT support services shall accommodate the communication needs of individuals with disabilities.",
+      "criteriaShorthand": "603.3 Accommodation of Communication Needs",
+      "criteriaNumber": 603.3,
+      "disability": [
+        "All Disabilities"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "Section 508",
+      "primaryStandard": "Section 508\r\nhttps://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria"
+    },
+    "7.1.1 Captioning playback": {
+      "impact": "M",
+      "criteriaText": "7.1.1 Captioning playback",
+      "criteriaShorthand": "7.1.1 Captioning playback",
+      "criteriaNumber": "7.1.1",
+      "disability": [
+        "Deafness",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Video player"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": true,
+      "standards": "EN 301 549",
+      "primaryStandard": "EN 301 549\r\nhttps://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf"
+    },
+    "7.1.2 Captioning synchronization": {
+      "impact": "M",
+      "criteriaText": "7.1.2 Captioning synchronization",
+      "criteriaShorthand": "7.1.2 Captioning synchronization",
+      "criteriaNumber": "7.1.2",
+      "disability": [
+        "Deafness",
+        "Partial Deafness"
+      ],
+      "endUserTool": [
+        "Video player"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "EN 301 549",
+      "primaryStandard": "EN 301 549\r\nhttps://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf"
+    },
+    "7.1.3 Preservation of captioning": {
+      "impact": "L",
+      "criteriaText": "7.1.3 Preservation of captioning",
+      "criteriaShorthand": "7.1.3 Preservation of captioning",
+      "criteriaNumber": "7.1.3",
+      "disability": [
+        "Deafness",
+        "Partial Deafness"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "EN 301 549",
+      "primaryStandard": "EN 301 549\r\nhttps://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf"
+    },
+    "7.2.1 Audio description playback": {
+      "impact": "M",
+      "criteriaText": "7.2.1 Audio description playback",
+      "criteriaShorthand": "7.2.1 Audio description playback",
+      "criteriaNumber": "7.2.1",
+      "disability": [
+        "Blindness",
+        "Deaf-Blindness",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Video player"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "EN 301 549",
+      "primaryStandard": "EN 301 549\r\nhttps://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf"
+    },
+    "7.2.2 Audio description synchronization": {
+      "impact": "M",
+      "criteriaText": "7.2.2 Audio description synchronization",
+      "criteriaShorthand": "7.2.2 Audio description synchronization",
+      "criteriaNumber": "7.2.2",
+      "disability": [
+        "Blindness",
+        "Deaf-Blindness",
+        "Low Vision"
+      ],
+      "endUserTool": [
+        "Video player"
+      ],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "EN 301 549",
+      "primaryStandard": "EN 301 549\r\nhttps://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf"
+    },
+    "7.2.3 Preservation of audio description": {
+      "impact": "L",
+      "criteriaText": "7.2.3 Preservation of audio description",
+      "criteriaShorthand": "7.2.3 Preservation of audio description",
+      "criteriaNumber": "7.2.3",
+      "disability": [
+        "Blindness",
+        "Deaf-Blindness",
+        "Low Vision"
+      ],
+      "endUserTool": [],
+      "related": [],
+      "confusedWith": [],
+      "quickWin": false,
+      "standards": "EN 301 549",
+      "primaryStandard": "EN 301 549\r\nhttps://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf"
+    }
+  },
+  "categories": {
+    "keyboardNavigationAndFocus": [
+      "2.1.1 Keyboard",
+      "2.1.2 No Keyboard Trap",
+      "2.4.1 Bypass Blocks",
+      "2.4.7 Focus Visible",
+      "2.4.3 Focus Order",
+      "2.1.4 Character Key Shortcuts",
+      "1.4.13 Content on Hover or Focus",
+      "3.2.1 On Focus"
+    ],
+    "availableToAssistiveTechnology": [
+      "4.1.2 Name, Role, Value",
+      "2.5.3 Label in Name",
+      "1.3.1 Info and Relationships",
+      "4.1.3 Status Messages",
+      "4.1.1 Parsing",
+      "3.2.3 Consistent Navigation",
+      "2.4.2 Page Titled",
+      "2.4.5 Multiple Ways",
+      "1.1.1 Non-text Content",
+      "3.2.4 Consistent Identification",
+      "2.4.4 Link Purpose (In Context)",
+      "3.1.1 Language of Page",
+      "3.1.2 Language of Parts"
+    ],
+    "forms": [
+      "2.4.6 Headings and Labels",
+      "3.3.2 Labels or Instructions",
+      "1.3.3 Sensory Characteristics",
+      "1.4.1 Use of Color",
+      "3.3.3 Error Suggestion",
+      "1.3.5 Identify Input Purpose",
+      "3.3.1 Error Identification",
+      "3.2.2 On Input",
+      "2.2.1 Timing Adjustable",
+      "3.3.4 Error Prevention (Legal, Financial, Data)"
+    ],
+    "responsive": [
+      "1.4.4 Resize text",
+      "1.4.5 Images of Text",
+      "1.4.3 Contrast (Minimum)",
+      "1.4.11 Non-Text Contrast",
+      "1.4.10 Reflow",
+      "1.4.12 Text Spacing",
+      "1.3.4 Orientation",
+      "2.5.1 Pointer Gestures",
+      "2.5.2 Pointer Cancellation",
+      "2.5.4 Motion Actuation",
+      "1.3.2 Meaningful Sequence"
+    ],
+    "userControl": [
+      "1.4.2 Audio Control",
+      "2.2.2 Pause, Stop, Hide",
+      "2.3.1 Three Flashes or Below Threshold"
+    ],
+    "userGroups": [
+      "302.1 Without Vision",
+      "302.2 With Limited Vision",
+      "302.3 Without Perception of Color",
+      "302.4 Without Hearing",
+      "302.5 With Limited Hearing",
+      "302.6 Without Speech",
+      "302.7 With Limited Manipulation",
+      "302.8 With Limited Reach and Strength",
+      "302.9 With Limited Language, Cognitive, and Learning Abilities",
+      "4.2.11 Privacy"
+    ],
+    "media": [
+      "1.2.1 Audio-only and Video-only (Prerecorded)",
+      "1.2.2 Captions (Prerecorded)",
+      "1.2.3 Audio Description or Media Alternative (Prerecorded)",
+      "1.2.4 Captions (Live)",
+      "1.2.5 Audio Description (Prerecorded)"
+    ]
+  }
+}
