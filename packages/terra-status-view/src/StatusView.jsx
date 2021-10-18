@@ -6,6 +6,9 @@ import ThemeContext from 'terra-theme-context';
 import { FormattedMessage } from 'react-intl';
 import Button from 'terra-button';
 import Divider from 'terra-divider';
+import IconCaretUp from 'terra-icon/lib/icon/IconCaretUp';
+import IconCaretDown from 'terra-icon/lib/icon/IconCaretDown';
+import * as KeyCode from 'keycode-js';
 import styles from './StatusView.module.scss';
 
 const cx = classNamesBind.bind(styles);
@@ -31,6 +34,12 @@ const propTypes = {
    * Set `focusable=false` for svg element used as `customGlyph`.
    */
   customGlyph: PropTypes.node,
+
+  /**
+   * Display a custom glyph. Overrides a variant's default glyph.
+   * Set `focusable=false` for svg element used as `customGlyph`.
+   */
+  errorLog: PropTypes.Object,
 
   /**
    *  Aligns the component at the top of the container rather than "centered"
@@ -63,6 +72,7 @@ const propTypes = {
 const defaultProps = {
   buttonAttrs: [],
   customGlyph: undefined,
+  errorLog: undefined,
   isAlignedTop: false,
   isGlyphHidden: false,
   message: undefined,
@@ -81,6 +91,7 @@ const generateButtons = (buttonAttrsArray) => {
 const StatusView = ({
   buttonAttrs,
   customGlyph,
+  errorLog,
   isAlignedTop,
   isGlyphHidden,
   message,
@@ -89,6 +100,9 @@ const StatusView = ({
   ...customProps
 }) => {
   const theme = React.useContext(ThemeContext);
+
+  const [isShowOpen, setIsShowOpen] = React.useState(false);
+  // const [errorLog, setErrorLog] = React.useState({});
 
   let glyphSection;
   if (customGlyph && !isGlyphHidden) {
@@ -161,6 +175,18 @@ const StatusView = ({
     'inner-view',
   ]);
 
+  const handleShowHideClick = () => {
+    setIsShowOpen(!isShowOpen);
+  };
+
+  const handleShowHideKeyDown = (event) => {
+    // Add focus styles for keyboard navigation.
+    // The onFocus event doesn't get triggered in some browsers, hence, the focus state needs to be managed here.
+    if (event.nativeEvent.keyCode === KeyCode.KEY_SPACE || event.nativeEvent.keyCode === KeyCode.KEY_RETURN) {
+      setIsShowOpen(!isShowOpen);
+    }
+  };
+
   return (
     <div {...customProps} className={outerViewClassNames}>
       <div className={cx('top-space')} />
@@ -171,6 +197,25 @@ const StatusView = ({
         {messageSection}
         {actionSection}
       </div>
+      {
+        errorLog && errorLog.stack && isShowOpen && (
+          <div className={cx('error-log-text')}>
+            {errorLog.stack}
+          </div>
+        )
+      }
+      {errorLog && errorLog.stack
+      && (
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
+      <a href="#" role="button" className={cx('show-hide-button')} onClick={handleShowHideClick} onKeyDown={handleShowHideKeyDown}>
+        {
+        isShowOpen ? 'Hide Error Log ' : 'Show Error Log '
+        }
+        {
+        isShowOpen ? <IconCaretUp /> : <IconCaretDown />
+        }
+      </a>
+      )}
       <div className={cx('bottom-space')} />
     </div>
   );

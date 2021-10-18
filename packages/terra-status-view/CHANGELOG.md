@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+* Added
+  * Added show/hide link to display error stack trace.
+
 ## 4.47.0 - (September 21, 2021)
 
 * Changed
