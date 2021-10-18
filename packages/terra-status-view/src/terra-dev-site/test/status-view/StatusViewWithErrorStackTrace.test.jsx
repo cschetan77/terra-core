@@ -2,7 +2,7 @@ import React from 'react';
 import StatusView from '../../../StatusView';
 
 const StatusViewWithErrorStackTrace = () => {
-  const [errorLog, setErrorLog] = React.useState({});
+  const [errorLog, setErrorLog] = React.useState(new Error());
   const getRectArea = (width, height) => {
     if (!(width || height)) {
       throw new Error('Parameter is not a number!');

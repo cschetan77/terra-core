@@ -36,10 +36,10 @@ const propTypes = {
   customGlyph: PropTypes.node,
 
   /**
-   * Display a custom glyph. Overrides a variant's default glyph.
-   * Set `focusable=false` for svg element used as `customGlyph`.
+   * Object to display stack trace for the Error thrown.
+   * Should have a message with it.
    */
-  errorLog: PropTypes.Object,
+  errorLog: PropTypes.instanceOf(Error),
 
   /**
    *  Aligns the component at the top of the container rather than "centered"
@@ -102,7 +102,6 @@ const StatusView = ({
   const theme = React.useContext(ThemeContext);
 
   const [isShowOpen, setIsShowOpen] = React.useState(false);
-  // const [errorLog, setErrorLog] = React.useState({});
 
   let glyphSection;
   if (customGlyph && !isGlyphHidden) {
@@ -198,13 +197,13 @@ const StatusView = ({
         {actionSection}
       </div>
       {
-        errorLog && errorLog.stack && isShowOpen && (
+        errorLog && errorLog.message && isShowOpen && (
           <div className={cx('error-log-text')}>
             {errorLog.stack}
           </div>
         )
       }
-      {errorLog && errorLog.stack
+      {errorLog && errorLog.message
       && (
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a href="#" role="button" className={cx('show-hide-button')} onClick={handleShowHideClick} onKeyDown={handleShowHideKeyDown}>
