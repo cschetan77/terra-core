@@ -2,7 +2,7 @@ import React from 'react';
 import StatusView from '../../../StatusView';
 
 const StatusViewWithErrorStackTrace = () => {
-  const [errorLog, setErrorLog] = React.useState(new Error());
+  const [additionalMessage, setAdditionalMessage] = React.useState('');
   const getRectArea = (width, height) => {
     if (!(width || height)) {
       throw new Error('Parameter is not a number!');
@@ -17,14 +17,14 @@ const StatusViewWithErrorStackTrace = () => {
         try {
           getRectArea();
         } catch (e) {
-          setErrorLog(e);
+          setAdditionalMessage(e.stack);
         }
       },
     },
   ];
 
   return (
-    <StatusView id="statusView" variant="error" title="500" message="Error With Stack Trace." buttonAttrs={StatusViewButtons} errorLog={errorLog} />
+    <StatusView id="statusView" variant="error" title="500" message="Error With Stack Trace." buttonAttrs={StatusViewButtons} additionalMessage={additionalMessage} />
   );
 };
 

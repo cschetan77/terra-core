@@ -6,9 +6,7 @@ import ThemeContext from 'terra-theme-context';
 import { FormattedMessage } from 'react-intl';
 import Button from 'terra-button';
 import Divider from 'terra-divider';
-import IconCaretUp from 'terra-icon/lib/icon/IconCaretUp';
-import IconCaretDown from 'terra-icon/lib/icon/IconCaretDown';
-import * as KeyCode from 'keycode-js';
+import ShowHide from 'terra-show-hide';
 import styles from './StatusView.module.scss';
 
 const cx = classNamesBind.bind(styles);
@@ -36,10 +34,9 @@ const propTypes = {
   customGlyph: PropTypes.node,
 
   /**
-   * Object to display stack trace for the Error thrown.
-   * Should have a message with it.
+   * Display a log or additional information message.
    */
-  errorLog: PropTypes.instanceOf(Error),
+  additionalMessage: PropTypes.string,
 
   /**
    *  Aligns the component at the top of the container rather than "centered"
@@ -72,7 +69,7 @@ const propTypes = {
 const defaultProps = {
   buttonAttrs: [],
   customGlyph: undefined,
-  errorLog: undefined,
+  additionalMessage: undefined,
   isAlignedTop: false,
   isGlyphHidden: false,
   message: undefined,
@@ -91,7 +88,7 @@ const generateButtons = (buttonAttrsArray) => {
 const StatusView = ({
   buttonAttrs,
   customGlyph,
-  errorLog,
+  additionalMessage,
   isAlignedTop,
   isGlyphHidden,
   message,
@@ -102,6 +99,10 @@ const StatusView = ({
   const theme = React.useContext(ThemeContext);
 
   const [isShowOpen, setIsShowOpen] = React.useState(false);
+
+  const toggleShowHide = () => {
+    setIsShowOpen(!isShowOpen);
+  };
 
   let glyphSection;
   if (customGlyph && !isGlyphHidden) {
@@ -136,9 +137,16 @@ const StatusView = ({
   let messageSection;
   if (message) {
     messageSection = (
-      <p className={cx('message')}>
+      <div className={cx('message')}>
         {message}
-      </p>
+        {
+          !!additionalMessage && (
+            <ShowHide buttonAlign="center" isOpen={isShowOpen} onChange={toggleShowHide}>
+              <p className={cx('error-log-text')}>{additionalMessage}</p>
+            </ShowHide>
+          )
+        }
+      </div>
     );
   }
 
@@ -174,18 +182,6 @@ const StatusView = ({
     'inner-view',
   ]);
 
-  const handleShowHideClick = () => {
-    setIsShowOpen(!isShowOpen);
-  };
-
-  const handleShowHideKeyDown = (event) => {
-    // Add focus styles for keyboard navigation.
-    // The onFocus event doesn't get triggered in some browsers, hence, the focus state needs to be managed here.
-    if (event.nativeEvent.keyCode === KeyCode.KEY_SPACE || event.nativeEvent.keyCode === KeyCode.KEY_RETURN) {
-      setIsShowOpen(!isShowOpen);
-    }
-  };
-
   return (
     <div {...customProps} className={outerViewClassNames}>
       <div className={cx('top-space')} />
@@ -196,25 +192,6 @@ const StatusView = ({
         {messageSection}
         {actionSection}
       </div>
-      {
-        errorLog && errorLog.message && isShowOpen && (
-          <div className={cx('error-log-text')}>
-            {errorLog.stack}
-          </div>
-        )
-      }
-      {errorLog && errorLog.message
-      && (
-      // eslint-disable-next-line jsx-a11y/anchor-is-valid
-      <a href="#" role="button" className={cx('show-hide-button')} onClick={handleShowHideClick} onKeyDown={handleShowHideKeyDown}>
-        {
-        isShowOpen ? 'Hide Error Log ' : 'Show Error Log '
-        }
-        {
-        isShowOpen ? <IconCaretUp /> : <IconCaretDown />
-        }
-      </a>
-      )}
       <div className={cx('bottom-space')} />
     </div>
   );
