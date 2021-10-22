@@ -8,9 +8,11 @@ const StatusViewWithErrorStackTrace = () => {
       throw new Error('Parameter is not a number!');
     }
   };
+
+  // This is just for example purpose. Users can set a state variable when ErrorBoundary is hit and pass that to the additionalMessage prop.
   const StatusViewButtons = [
     {
-      text: 'Throw Error',
+      text: 'Click To Throw Error',
       key: 1,
       id: 'button1',
       onClick: () => {
